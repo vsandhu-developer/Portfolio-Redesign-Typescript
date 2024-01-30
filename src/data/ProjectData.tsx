@@ -1,5 +1,3 @@
-import dailyBlogImage from "../public/daily1blog.png";
-
 export const projectData = [
   {
     id: 1,
