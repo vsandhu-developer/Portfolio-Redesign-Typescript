@@ -1,4 +1,4 @@
-// import React, { useRef } from "react";
+import React, { useRef} from "react";
 // import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -102,7 +102,7 @@ const Contact = () => {
                         design websites
                       </span>
                                         </h3>
-                                        <form>
+                                        <form id={"myForm"}>
                                             {/* name input */}
                                             <div className="relative z-0 w-full mt-[40px] mb-8 group">
                                                 <input
