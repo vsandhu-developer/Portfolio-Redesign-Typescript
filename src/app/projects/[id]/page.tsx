@@ -12,9 +12,7 @@ interface paramsType {
 }
 
 export default function page({ params }: paramsType) {
-    console.log(params);
     const id = params.id;
-    console.log(id);
     const filteredData = projectData.filter(
         (item) => Number(item.id) === Number(id)
     );
