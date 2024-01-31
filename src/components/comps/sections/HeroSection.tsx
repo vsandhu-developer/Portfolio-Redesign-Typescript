@@ -54,7 +54,7 @@ export default function HeroSection() {
 
         {/* Buttons */}
 
-        <div className="space-x-6 flex items-center">
+        <div className="space-x-6 flex items-center flex-wrap justify-center gap-y-4">
           <Button className="px-10 py-6 rounded-full hover:scale-110 transition-all">
             Contact Me
           </Button>
