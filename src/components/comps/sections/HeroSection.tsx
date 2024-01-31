@@ -15,12 +15,12 @@ export default function HeroSection() {
   const socialMediaItems:socialMedia[] = [
     {
       title: "Github",
-      icon: <GitHubLogoIcon color="black" />,
+      icon: <GitHubLogoIcon color="black" width={25} height={25} />,
       url: "https://github.com/developervinay1/"
     },
     {
       title: "Linked In",
-      icon: <LinkedInLogoIcon color={"black"} />,
+      icon: <LinkedInLogoIcon color={"black"} width={25} height={25} />,
       url: "https://www.linkedin.com/in/developer-vinaysandhu/"
     }
   ]
@@ -45,10 +45,12 @@ export default function HeroSection() {
         {/* Intro Content */}
         <p className="text-2xl sm:text-4xl text-center mt-10 !leading-[1.5]">
           <span className="font-bold">Hello, I&apos;m Vinay.</span> I&apos;m a{" "}
-          <span className="font-bold">Full-Stack Developer</span>. I enjoy
+          <span className="font-bold">Front-End Developer</span> with 2+ years of experience. I enjoy
           building websites and mobile apps. My focus is{" "}
           <span className="font-bold">React (Next JS) and React Native.</span>
         </p>
+
+        <p className={"text-gray-600"}>This portfolio is built using Next JS 14, Tailwind CSS and Typescript.</p>
 
         {/* Buttons */}
 
@@ -56,8 +58,11 @@ export default function HeroSection() {
           <Button className="px-10 py-6 rounded-full hover:scale-110 transition-all">
             Contact Me
           </Button>
-          <Button className="px-10 py-6 rounded-full hover:scale-110 transition-all bg-white text-black hover:text-white">
-            Download CV
+          <Button asChild className="px-10 py-6 rounded-full hover:scale-110 transition-all bg-white text-black hover:text-white">
+            <a target={"_blank"} href={"https://drive.google.com/file/d/1vXiQ64bsy40LD5mkzylpFe2cgMTBgAk9/view"}>
+              View CV
+            </a>
+
           </Button>
           {
             socialMediaItems.map(({title, icon, url}, index) => {

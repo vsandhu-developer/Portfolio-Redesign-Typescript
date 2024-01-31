@@ -2,7 +2,6 @@ export const projectData = [
   {
     id: 1,
     name: "Daily1Blog",
-
     technology: "React Js Firebase",
     role: "Full Stack Web Developer",
     description:
@@ -22,7 +21,7 @@ export const projectData = [
       },
       {
         id: 4,
-        feature: "Resposive Design",
+        feature: "Responsive Design",
       },
     ],
     websiteURL: "https://daily1blog.web.app/",

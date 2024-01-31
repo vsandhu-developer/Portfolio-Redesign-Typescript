@@ -177,12 +177,8 @@ export default function page() {
                         A look at my professional Experience
                     </h2>
                     <p className="leading-10 text-justify">
-                        I am VinayPartap Singh.Whether you&apos;re looking for a
-                        straightforward website or a sophisticated e-commerce platform, I
-                        have the knowledge and expertise required to realise your vision.
-                        Utilize my web development services to help you grow your company.
-                        Specialised in Shopify, Wordpress, HTML, CSS, Javascript, React JS,
-                        React Native, and more.
+                        {/* eslint-disable-next-line react/no-unescaped-entities */}
+                        I am Vinaypartap Singh. Whether you're looking for a straightforward website or a sophisticated e-commerce platform, I have the knowledge and expertise required to realise your vision. Utilise my web development services to help you grow your company. Specialised in Shopify, WordPress, HTML, CSS, Javascript, React JS, React Native, and more.
                     </p>
                     <button className="border-2 py-3 px-8 rounded-md border-red-600 text-red-600 hover:bg-red-600 hover:text-white transition-all mt-5">
                         <a

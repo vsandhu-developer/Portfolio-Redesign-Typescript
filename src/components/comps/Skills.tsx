@@ -7,12 +7,13 @@ import {
   FaFigma,
   FaBezierCurve,
   FaPenNib,
-  FaFileWord,
-  FaFilePowerpoint,
 } from "react-icons/fa";
 import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { FaFileExcel, FaReact } from "react-icons/fa6";
 import { CiDatabase } from "react-icons/ci";
+import {BiLogoTypescript} from "react-icons/bi";
+import {SiSquarespace} from "react-icons/si";
+import {TbBrandNextjs} from "react-icons/tb";
 
 interface skillsType {
   skill: string;
@@ -38,6 +39,11 @@ export default function Skills() {
       color: "#F0DB4F",
     },
     {
+      skill: "Typescript",
+      icon: <BiLogoTypescript color="#007acc" />,
+      color: "#007acc",
+    },
+    {
       skill: "React JS",
       icon: <FaReact color="#61dbfb" />,
       color: "#61dbfb",
@@ -59,8 +65,8 @@ export default function Skills() {
     },
     {
       skill: "Next JS",
-      icon: <FaReact color="#61dbfb" />,
-      color: "#61dbfb",
+      icon: <TbBrandNextjs color="#000000" />,
+      color: "#000000",
     },
     {
       skill: "WordPress",
@@ -98,20 +104,10 @@ export default function Skills() {
       color: "#2A89DA",
     },
     {
-      skill: "Excel",
-      icon: <FaFileExcel color="#1D6F42" />,
-      color: "#1D6F42",
-    },
-    {
-      skill: "MS Word",
-      icon: <FaFileWord color="#1B5EBE" />,
-      color: "#1B5EBE",
-    },
-    {
-      skill: "MS PowerPoint",
-      icon: <FaFilePowerpoint color="#C13B1B" />,
-      color: "#C13B1B",
-    },
+      skill: "SquareSpace",
+      icon: <SiSquarespace color={"#000000"} />,
+      color: "#000000"
+    }
   ];
   return (
     <div id="skills" className="mb-32">
