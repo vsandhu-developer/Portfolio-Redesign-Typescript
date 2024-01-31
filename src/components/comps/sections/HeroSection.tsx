@@ -50,7 +50,7 @@ export default function HeroSection() {
           <span className="font-bold">React (Next JS) and React Native.</span>
         </p>
 
-        <p className={"text-gray-600"}>This portfolio is built using Next JS 14, Tailwind CSS and Typescript.</p>
+        <p className={"text-gray-600 text-center"}>This portfolio is built using Next JS 14, Tailwind CSS and Typescript.</p>
 
         {/* Buttons */}
 

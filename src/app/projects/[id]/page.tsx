@@ -20,7 +20,7 @@ export default function page({ params }: paramsType) {
     // Assuming projectData is an array of objects with an 'id' property
 
     return (
-        <div className="mb-32">
+        <div className="mb-32 px-10">
             <div className="pt-10 mt-10 max-w-4xl m-auto">
                 {filteredData ? (
                     <div>
