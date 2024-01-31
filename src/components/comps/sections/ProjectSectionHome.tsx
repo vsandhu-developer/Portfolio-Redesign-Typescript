@@ -21,7 +21,7 @@ export default function ProjectsHome() {
         </div>
 
         <div className="mt-10 px-5 grid gap-y-4 gap-x-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 bg-red-50  bg-transparent">
-          {projectData.slice(0, 6).map((data, index) => {
+          {projectData.map((data, index) => {
             return (
               <div
                 key={index}
