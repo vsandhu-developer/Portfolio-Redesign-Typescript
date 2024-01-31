@@ -15,6 +15,8 @@ interface navItemsType {
 }
 
 export default function Header() {
+
+
   const navItems: navItemsType[] = [
     {
       title: "Home",

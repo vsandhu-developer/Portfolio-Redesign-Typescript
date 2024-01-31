@@ -5,6 +5,13 @@ import { CiGlobe } from "react-icons/ci";
 import { PiArrowSquareOutFill } from "react-icons/pi";
 import { projectData } from "@/data/ProjectData";
 import { Button } from "@/components/ui/button";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+  title: "React Native, WordPress, Shopify and many other projects by Vinaypartap Singh.",
+  description: "Discover a collection of React Native projects, including a Laundry application, Job Finder app, Image and Video Uploading app, and a YouTube UI Clone.",
+  keywords: "React Native, Laundry App, Job Finder, Image Upload, Video Upload, YouTube UI Clone, Daily1Blog, Blog Website, Full Stack Development."
+};
 
 export default function Projects() {
   return (

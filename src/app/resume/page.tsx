@@ -1,3 +1,11 @@
+import type {Metadata} from "next";
+
+export const metadata:Metadata = {
+    title: "Vinaypartap Singh | Web Developer Resume",
+    description: "Explore VinayPartap Singh's web development resume, showcasing experience, skills, and contact information.",
+    keywords: "Web Developer, Resume, VinayPartap Singh, React, React Native, WordPress, WooCommerce, Shopify, HTML, CSS, JavaScript, Figma, Adobe XD"
+}
+
 interface projectDataProps {
     companyName: string,
     type: string,
