@@ -23,7 +23,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="bg-[#fbe2e3] dark:bg-[#5b2224] z-[-1] absolute top-[-6rem] right-[11rem] h-[35.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem]"></div>
-
         <div className="bg-[#fbe2e3] dark:bg-[#5b2224] z-[-1] absolute top-[-6rem] left-[11rem] h-[35.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem]"></div>
         <Header />
         {children}

@@ -44,7 +44,7 @@ export default function HeroSection() {
 
         {/* Intro Content */}
         <p className="text-2xl sm:text-4xl text-center mt-10 !leading-[1.5]">
-          <span className="font-bold">Hello, I&apos;m Vinay.</span>I&apos;m a{" "}
+          <span className="font-bold">Hello, I&apos;m Vinay.</span> I&apos;m a{" "}
           <span className="font-bold">Full-Stack Developer</span>. I enjoy
           building websites and mobile apps. My focus is{" "}
           <span className="font-bold">React (Next JS) and React Native.</span>
