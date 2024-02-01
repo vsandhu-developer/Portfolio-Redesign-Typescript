@@ -18,11 +18,11 @@ type projectDataProps = {
         }
     >
   }>,
-  challanges: string,
+  challenges: string,
   solution: string,
   results: string,
   learnings: string,
-  futureImporvements: string,
+  futureImprovements: string,
   github?: string,
 
 }
@@ -116,7 +116,7 @@ export const projectData:projectDataProps[] = [
         ],
       },
     ],
-    challanges:
+    challenges:
       "Balancing user authentication security with a seamless user experience, implementing a flexible and efficient blog post management system, and optimizing the site for responsive design.",
     solution:
       "Leveraged React.js for front-end development and Firebase for user authentication and data storage. Implemented security measures for user authentication and designed a modular and responsive UI for an optimal user experience.",
@@ -124,12 +124,12 @@ export const projectData:projectDataProps[] = [
       "Daily1Blog provides users with a dynamic and secure platform for reading and contributing blog posts. Positive feedback highlights the site's clean design, intuitive navigation, and the seamless integration of user contributions.",
     learnings:
       "Enhanced proficiency in full-stack development, improved skills in user authentication, and gained insights into creating a user-friendly blogging platform.",
-    futureImporvements:
+    futureImprovements:
       "Considering future enhancements, such as implementing user comments, social sharing features, and further customization options for user profiles",
   },
   {
     id: 2,
-    name: "Netlfix App Clone",
+    name: "Netflix App Clone",
     technology: "React Native & Firebase",
     role: "Full Stack Development",
 
@@ -185,7 +185,7 @@ export const projectData:projectDataProps[] = [
         ],
       },
     ],
-    challanges:
+    challenges:
         "Implementing dynamic data fetching from an API to ensure real-time updates and a diverse catalog of movies, while maintaining a user-friendly interface.",
     solution:
         "Utilized React.js for building a modular and reusable component-based structure. Integrated API calls to dynamically fetch and display movie information, ensuring a responsive and interactive user experience.",
@@ -193,7 +193,7 @@ export const projectData:projectDataProps[] = [
         "Successfully recreated the Netflix experience with dynamic movie data, providing users with an authentic streaming feel. Positive user feedback reflects the project's success in delivering a visually pleasing and functionally robust platform.",
     learnings:
         "Expanded proficiency in React.js, API integration, and front-end development. Gained insights into managing dynamic data to create a compelling user interface.",
-    futureImporvements:
+    futureImprovements:
         "Considering future enhancements, such as user authentication, personalized recommendations, and additional features to elevate the Netflix clone's user experience.",
   },
   {
@@ -285,7 +285,7 @@ export const projectData:projectDataProps[] = [
         ],
       },
     ],
-    challanges:
+    challenges:
       "Balancing dynamic content creation with Shopify Liquid, optimizing the site for performance, and ensuring a consistent and visually appealing design.",
     solution:
       "Leveraged the flexibility of Shopify Liquid for dynamic content, optimized images and assets for performance, and maintained a consistent design language throughout the website.",
@@ -293,7 +293,7 @@ export const projectData:projectDataProps[] = [
       "Spartx Dev E-commerce delivers a visually appealing, responsive, and user-friendly online shopping experience. Positive feedback emphasizes the site's dynamic features, seamless checkout process, and overall design aesthetics.",
     learnings:
       "Enhanced skills in front-end development with Shopify Liquid, improved proficiency in responsive design, and gained insights into creating a seamless e-commerce user experience.",
-    futureImporvements:
+    futureImprovements:
       "Considering future enhancements, such as implementing customer accounts, integrating additional payment gateways, and expanding product categories.",
   },
   {
@@ -387,7 +387,7 @@ export const projectData:projectDataProps[] = [
         ],
       },
     ],
-    challanges:
+    challenges:
       "Implementing seamless integration between React Native and Firebase for real-time updates, ensuring accurate location detection, and designing an intuitive user interface.",
     solution:
       "Leveraged React Native's capabilities to create a responsive and cross-platform application. Integrated Firebase for user authentication, Firestore for real-time data updates, and the Geolocation API for automatic location detection.",
@@ -395,7 +395,7 @@ export const projectData:projectDataProps[] = [
       "LaundryPal successfully provides users with a streamlined laundry management experience. Positive feedback highlights the app's intuitive design, automatic location features, and efficient order tracking.",
     learnings:
       "Gained extensive experience in mobile app development using React Native, Firebase integration, and Geolocation API usage. Improved skills in creating responsive and user-friendly interfaces for on-the-go applications.",
-    futureImporvements:
+    futureImprovements:
       "Planning to enhance LaundryPal by implementing additional features such as push notifications, in-app chat support, and more customization options for users.",
   },
   {
@@ -484,7 +484,7 @@ export const projectData:projectDataProps[] = [
         ],
       },
     ],
-    challanges:
+    challenges:
       "Integrating secure user authentication with Firebase, implementing robust media upload functionality, and maintaining a user-friendly interface for seamless user experience.",
     solution:
       "Leveraged React Native for building a responsive cross-platform application. Integrated Firebase for secure user authentication and cloud storage functionalities. Prioritized user interface design for a smooth and intuitive experience.",
@@ -492,7 +492,7 @@ export const projectData:projectDataProps[] = [
       "CloudMedia Vault provides users with a secure and user-friendly platform to store images and videos on the cloud. Positive feedback emphasizes the app's security measures and ease of use.",
     learnings:
       "Enhanced skills in React Native development, Firebase integration, and implementing secure authentication protocols. Gained insights into cloud storage management and data security for mobile applications.",
-    futureImporvements:
+    futureImprovements:
       "Considering future enhancements, such as additional media management features, collaborative sharing options, and further security optimizations.",
   },
   {
@@ -585,7 +585,7 @@ export const projectData:projectDataProps[] = [
         ],
       },
     ],
-    challanges:
+    challenges:
       "Ensuring real-time interactions, implementing secure image uploads, and creating an intuitive mobile user interface for a dynamic social experience.",
     solution:
       "Leveraged React Native for cross-platform mobile development and Firebase services for seamless data storage, authentication, and real-time updates. Focused on creating an intuitive UI for an engaging mobile experience.",
@@ -593,7 +593,7 @@ export const projectData:projectDataProps[] = [
       "Threads Clone delivers an engaging social media experience on mobile devices, allowing users to connect, share, and interact on the go. Positive user feedback highlights the app's responsiveness and user-friendly design.",
     learnings:
       "Enhanced proficiency in mobile app development with React Native, Firebase integration for real-time updates, and secure user authentication. Gained insights into optimizing user interfaces for mobile interactions.",
-    futureImporvements:
+    futureImprovements:
       "Considering future enhancements, such as direct messaging features, video uploads, and additional customization options to further elevate the Threads Clone user experience.",
   },
   {
@@ -686,7 +686,7 @@ export const projectData:projectDataProps[] = [
         ],
       },
     ],
-    challanges:
+    challenges:
       "Implementing a secure booking system, integrating Firebase for real-time updates, and creating an efficient bookmarking system for user convenience.",
     solution:
       "Leveraged React Native for a cross-platform mobile application, integrated Firebase for authentication and Firestore for seamless data storage. Focused on creating an intuitive user interface for an optimal booking experience.",
@@ -694,7 +694,7 @@ export const projectData:projectDataProps[] = [
       "StayEasy offers users a hassle-free hotel booking experience with secure authentication, a user-friendly interface, and convenient bookmarking features. Positive feedback highlights the app's responsiveness and ease of use.",
     learnings:
       "Enhanced proficiency in mobile app development using React Native, integrated real-time updates with Firebase, and improved skills in creating efficient booking and bookmarking systems.",
-    futureImporvements:
+    futureImprovements:
       "Considering future enhancements, such as additional search filters, personalized recommendations, and integration with payment gateways for seamless transactions.",
   },
   {
@@ -749,7 +749,7 @@ export const projectData:projectDataProps[] = [
         ],
       },
     ],
-    challanges:
+    challenges:
       "Implementing the bubble event concept for an immersive and responsive gaming environment.",
     solution:
       "Utilized JavaScript to create a dynamic bubble-popping experience, enhancing user interactivity and enjoyment.",
@@ -757,7 +757,7 @@ export const projectData:projectDataProps[] = [
       "Achieved positive user feedback for the entertaining gaming experience and increased user interaction. ",
     learnings:
       "Enhanced proficiency in JavaScript event handling and improved skills in creating engaging user interfaces for online games.",
-    futureImporvements:
+    futureImprovements:
       "Planning to incorporate additional game levels, challenges, and social sharing features for an enriched gaming community.",
   },
   {
@@ -780,7 +780,7 @@ export const projectData:projectDataProps[] = [
       },
       {
         id: 3,
-        feature: "Resposive Design",
+        feature: "Responsive Design",
       },
     ],
     websiteURL: "https://zomato-clone-p1.netlify.app/",
@@ -813,7 +813,7 @@ export const projectData:projectDataProps[] = [
         ],
       },
     ],
-    challanges:
+    challenges:
       "Implementing secure user authentication and optimizing data filtering for a smooth product browsing experience.",
     solution:
       "Leveraged React.js for dynamic front-end development and Firebase services for secure authentication and real-time data updates.",
@@ -821,7 +821,7 @@ export const projectData:projectDataProps[] = [
       "Successfully created a user-friendly dining platform with enhanced data filtering, resulting in positive user engagement.",
     learnings:
       "Gained expertise in integrating Firebase services for user authentication and real-time data management, contributing to improved full-stack development skills.",
-    futureImporvements:
+    futureImprovements:
       "Planning to expand features, including order tracking and social sharing options, to elevate the user dining experience.",
   },
 ];
