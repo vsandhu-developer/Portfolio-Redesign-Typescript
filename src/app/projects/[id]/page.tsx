@@ -84,7 +84,7 @@ export default function page({ params }: paramsType) {
 
                                     <p className="text-lg tracking-wider leading-10">
                                         <span className="font-bold">Challenges: </span>
-                                        {data.challanges}
+                                        {data.challenges}
                                     </p>
                                     <p className="text-lg tracking-wider leading-10">
                                         <span className="font-bold">Solution: </span>
@@ -100,7 +100,7 @@ export default function page({ params }: paramsType) {
                                     </p>
                                     <p className="text-lg tracking-wider leading-10">
                                         <span className="font-bold">Future Improvements: </span>
-                                        {data.futureImporvements}
+                                        {data.futureImprovements}
                                     </p>
 
                                     <div className="flex gap-3">
