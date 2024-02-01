@@ -1,6 +1,7 @@
 "use client"
 
 import React from "react";
+import Image from "next/image";
 
 export default function Contact() {
 
@@ -50,9 +51,11 @@ export default function Contact() {
                                                 className="flex flex-wrap bg-transparent p-[30px] border-[#212425] border-2 gap-2 rounded-xl"
                                             >
                                                 <span className="w-full my-2">
-                                                  <img
+                                                  <Image
+                                                      width={40}
+                                                      height={40}
                                                       src={data.imageURL}
-                                                      alt="icon"
+                                                      alt={`${data.type} Icon`}
                                                       className="w-[40px] text-2xl text-white"
                                                   />
                                                 </span>
