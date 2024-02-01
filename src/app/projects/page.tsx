@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   keywords: "React Native, Laundry App, Job Finder, Image Upload, Video Upload, YouTube UI Clone, Daily1Blog, Blog Website, Full Stack Development."
 };
 
+
 export default function Projects() {
   return (
     <div>
