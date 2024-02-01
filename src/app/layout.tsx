@@ -3,6 +3,7 @@ import { Jost } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/comps/Header";
 import NextTopLoader from "nextjs-toploader";
+import Footer from "@/components/comps/Footer";
 
 const inter = Jost({
   subsets: ["latin"],
@@ -43,6 +44,7 @@ export default function RootLayout({
     />
     <Header/>
     {children}
+    <Footer />
     </body>
     </html>
   );
