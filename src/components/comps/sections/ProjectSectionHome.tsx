@@ -5,6 +5,7 @@ import { CiGlobe } from "react-icons/ci";
 import { PiArrowSquareOutFill } from "react-icons/pi";
 import { projectData } from "@/data/ProjectData";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function ProjectsHome() {
   return (
@@ -27,9 +28,10 @@ export default function ProjectsHome() {
                 key={index}
                 className={`cursor-pointer shadow-md hover:shadow-xl h-fit text-3xl flex flex-col justify-center items-center transition-all rounded-md my-6 projectDataSection`}
               >
-                <div className="bg-white w-full h-full p-5 rounded-md space-y-4">
-                  <div className="flex flex-wrap justify-between items-center">
-                    <h4 className="text-lg tracking-widest my-6">
+                <div className="bg-white w-full h-full rounded-md space-y-2">
+                  <Image className={"w-full rounded-sm"} src={data.image} alt={`${data.name} Image`} width={400} height={200} />
+                  <div className="flex flex-wrap justify-between items-center px-5">
+                    <h4 className="text-lg tracking-widest my-3">
                       {data.name}
                     </h4>
                     <div className="flex gap-2 items-center">
@@ -54,9 +56,8 @@ export default function ProjectsHome() {
                       )}
                     </div>
                   </div>
-
-                  <h5 className="text-sm truncate">{data.technology}</h5>
-                  <div className="flex gap-4 items-center">
+                  <h5 className="text-sm truncate px-5">{data.technology}</h5>
+                  <div className="flex gap-4 items-center px-5 pb-4">
                     {data.github && (
                       <Button
                         asChild

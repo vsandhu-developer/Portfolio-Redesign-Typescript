@@ -1,37 +1,45 @@
+import Daily1BlogImage from "@/assets/mockups/Daily1Blog.png";
+import NetflixImage from "@/assets/mockups/Netflix.png";
+import SpartxImage from "@/assets/mockups/Spartx Dev.png";
+import LaundryImage from "@/assets/mockups/Laundry.png";
+import CloudVaultImage from "@/assets/mockups/MediaCloud.png";
+import ThreadsImage from "@/assets/mockups/Threads Clone.png";
+import Booking from "@/assets/mockups/Booking.png";
+import BubbleImage from "@/assets/mockups/Bubble Game.png";
+import ZomatoImage from "@/assets/mockups/Zomato.png";
+
 type projectDataProps = {
-  id: number,
-  name: string,
-  technology: string,
-  role: string,
-  description: string,
+  id: number;
+  name: string;
+  image: string;
+  technology: string;
+  role: string;
+  description: string;
   keyFeatures: Array<{
-    id: number,
-    feature: string
-  }>,
-  websiteURL?: string,
+    id: number;
+    feature: string;
+  }>;
+  websiteURL?: string;
   detailedFeatures: Array<{
-    title: string,
-    features: Array<
-        {
-          title: string,
-          description: string
-        }
-    >
-  }>,
-  challenges: string,
-  solution: string,
-  results: string,
-  learnings: string,
-  futureImprovements: string,
-  github?: string,
+    title: string;
+    features: Array<{
+      title: string;
+      description: string;
+    }>;
+  }>;
+  challenges: string;
+  solution: string;
+  results: string;
+  learnings: string;
+  futureImprovements: string;
+  github?: string;
+};
 
-}
-
-
-export const projectData:projectDataProps[] = [
+export const projectData: projectDataProps[] = [
   {
     id: 1,
     name: "Daily1Blog",
+    image: Daily1BlogImage.src,
     technology: "React Js Firebase",
     role: "Full Stack Web Developer",
     description:
@@ -130,13 +138,14 @@ export const projectData:projectDataProps[] = [
   {
     id: 2,
     name: "Netflix App Clone",
+    image: NetflixImage.src,
     technology: "React Native & Firebase",
     role: "Full Stack Development",
 
     description:
-        "Developed a Netflix clone mobile application using React Native and Firebase.\n" +
-        "Features dynamic fetching of movie data from a third-party API to create a realistic and engaging streaming experience.\n" +
-        "The application mirrors the Netflix interface, offering users a visually appealing layout and seamless navigation.",
+      "Developed a Netflix clone mobile application using React Native and Firebase.\n" +
+      "Features dynamic fetching of movie data from a third-party API to create a realistic and engaging streaming experience.\n" +
+      "The application mirrors the Netflix interface, offering users a visually appealing layout and seamless navigation.",
     keyFeatures: [
       {
         id: 1,
@@ -145,7 +154,7 @@ export const projectData:projectDataProps[] = [
       {
         id: 2,
         feature:
-            "Netflix-inspired user interface with dynamic content categories",
+          "Netflix-inspired user interface with dynamic content categories",
       },
       {
         id: 3,
@@ -160,7 +169,7 @@ export const projectData:projectDataProps[] = [
           {
             title: "Dynamic Movie Database",
             description:
-                "Utilized React.js to dynamically fetch movies data from an API, ensuring an up-to-date and extensive movie library.",
+              "Utilized React.js to dynamically fetch movies data from an API, ensuring an up-to-date and extensive movie library.",
           },
         ],
       },
@@ -170,7 +179,7 @@ export const projectData:projectDataProps[] = [
           {
             title: "Intuitive UI",
             description:
-                "Designed a user-friendly interface inspired by Netflix's sleek and intuitive design",
+              "Designed a user-friendly interface inspired by Netflix's sleek and intuitive design",
           },
         ],
       },
@@ -180,26 +189,26 @@ export const projectData:projectDataProps[] = [
           {
             title: "Information",
             description:
-                "Provided detailed movie pages with information, trailers, and cast details for an immersive viewing experience.",
+              "Provided detailed movie pages with information, trailers, and cast details for an immersive viewing experience.",
           },
         ],
       },
     ],
     challenges:
-        "Implementing dynamic data fetching from an API to ensure real-time updates and a diverse catalog of movies, while maintaining a user-friendly interface.",
+      "Implementing dynamic data fetching from an API to ensure real-time updates and a diverse catalog of movies, while maintaining a user-friendly interface.",
     solution:
-        "Utilized React.js for building a modular and reusable component-based structure. Integrated API calls to dynamically fetch and display movie information, ensuring a responsive and interactive user experience.",
+      "Utilized React.js for building a modular and reusable component-based structure. Integrated API calls to dynamically fetch and display movie information, ensuring a responsive and interactive user experience.",
     results:
-        "Successfully recreated the Netflix experience with dynamic movie data, providing users with an authentic streaming feel. Positive user feedback reflects the project's success in delivering a visually pleasing and functionally robust platform.",
+      "Successfully recreated the Netflix experience with dynamic movie data, providing users with an authentic streaming feel. Positive user feedback reflects the project's success in delivering a visually pleasing and functionally robust platform.",
     learnings:
-        "Expanded proficiency in React.js, API integration, and front-end development. Gained insights into managing dynamic data to create a compelling user interface.",
+      "Expanded proficiency in React.js, API integration, and front-end development. Gained insights into managing dynamic data to create a compelling user interface.",
     futureImprovements:
-        "Considering future enhancements, such as user authentication, personalized recommendations, and additional features to elevate the Netflix clone's user experience.",
+      "Considering future enhancements, such as user authentication, personalized recommendations, and additional features to elevate the Netflix clone's user experience.",
   },
   {
     id: 3,
     name: "Spartx Dev",
-
+    image: SpartxImage.src,
     technology: "Front-End Development, Shopify Liquid",
     role: "Front-end Web Developer",
     description:
@@ -299,7 +308,7 @@ export const projectData:projectDataProps[] = [
   {
     id: 4,
     name: "Laundry Application",
-
+    image: LaundryImage.src,
     technology:
       "React Native, Firebase (Authentication, Firestore), JavaScript & Redux Toolkit",
     role: "Full Stack Mobile Developer",
@@ -401,7 +410,7 @@ export const projectData:projectDataProps[] = [
   {
     id: 5,
     name: "CloudMedia Vault",
-
+    image: CloudVaultImage.src,
     technology:
       "React Native, Firebase (Authentication, Cloud Storage), JavaScript",
     role: "Full-Stack Mobile Developer",
@@ -498,7 +507,7 @@ export const projectData:projectDataProps[] = [
   {
     id: 6,
     name: "Thread Clone",
-
+    image: ThreadsImage.src,
     technology:
       "React Native, Firebase (Authentication, Firestore, Storage), JavaScript",
     role: "Full-stack Mobile Developer",
@@ -599,7 +608,7 @@ export const projectData:projectDataProps[] = [
   {
     id: 7,
     name: "Stay Easy",
-
+    image: Booking.src,
     technology:
       "React Native, Firebase (Authentication, Firestore), JavaScript",
     role: "Full-stack Mobile Developer",
@@ -700,7 +709,7 @@ export const projectData:projectDataProps[] = [
   {
     id: 8,
     name: "Bubble Game",
-
+    image: BubbleImage.src,
     technology: "Html, Css and Javascript",
     role: "Front-end Developer",
     description:
@@ -763,7 +772,7 @@ export const projectData:projectDataProps[] = [
   {
     id: 9,
     name: "Zomato Clone",
-
+    image: ZomatoImage.src,
     technology:
       "React.js, Firebase (Authentication, Realtime Database), HTML, CSS",
     role: "Full Stack Developer",
