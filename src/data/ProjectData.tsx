@@ -1,11 +1,11 @@
 import Daily1BlogImage from "@/assets/mockups/Daily1Blog.png";
 import NetflixImage from "@/assets/mockups/Netflix.png";
-import SpartxImage from "@/assets/mockups/Spartx Dev.png";
+import SpartxImage from "@/assets/mockups/SpartxDev.png";
 import LaundryImage from "@/assets/mockups/Laundry.png";
 import CloudVaultImage from "@/assets/mockups/MediaCloud.png";
-import ThreadsImage from "@/assets/mockups/Threads Clone.png";
+import ThreadsImage from "@/assets/mockups/ThreadsClone.png";
 import Booking from "@/assets/mockups/Booking.png";
-import BubbleImage from "@/assets/mockups/Bubble Game.png";
+import BubbleImage from "@/assets/mockups/BubbleGame.png";
 import ZomatoImage from "@/assets/mockups/Zomato.png";
 
 // Image Check
