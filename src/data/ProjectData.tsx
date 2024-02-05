@@ -8,6 +8,8 @@ import Booking from "@/assets/mockups/Booking.png";
 import BubbleImage from "@/assets/mockups/Bubble Game.png";
 import ZomatoImage from "@/assets/mockups/Zomato.png";
 
+// Image Check
+
 type projectDataProps = {
   id: number;
   name: string;
