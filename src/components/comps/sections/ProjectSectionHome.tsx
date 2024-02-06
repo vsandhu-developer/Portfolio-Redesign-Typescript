@@ -29,7 +29,7 @@ export default function ProjectsHome() {
                 className={`cursor-pointer shadow-md hover:shadow-xl h-fit text-3xl flex flex-col justify-center items-center transition-all rounded-md my-6 projectDataSection`}
               >
                 <div className="bg-white w-full h-full rounded-md space-y-2">
-                  <Image className={"w-full rounded-sm"} src={data.image} alt={`${data.name} Image`} width={400} height={200} />
+                  <Image priority={true} className={"w-full rounded-sm"} src={data.image} alt={`${data.name} Image`} width={400} height={200} />
                   <div className="flex flex-wrap justify-between items-center px-5">
                     <h4 className="text-lg tracking-widest my-3">
                       {data.name}
