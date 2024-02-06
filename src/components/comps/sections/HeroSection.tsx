@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import MainImage from "../../../assets/Main_Image.png"
+import Link from "next/link"
 
 interface socialMedia {
   title: string,
@@ -55,8 +56,8 @@ export default function HeroSection() {
         {/* Buttons */}
 
         <div className="space-x-6 flex items-center flex-wrap justify-center gap-y-4">
-          <Button className="px-10 py-6 rounded-full hover:scale-110 transition-all">
-            Contact Me
+          <Button asChild className="px-10 py-6 rounded-full hover:scale-110 transition-all">
+            <Link href="/contact">Contact Me</Link>
           </Button>
           <Button asChild className="px-10 py-6 rounded-full hover:scale-110 transition-all bg-white text-black hover:text-white">
             <a target={"_blank"} href={"https://drive.google.com/file/d/1vXiQ64bsy40LD5mkzylpFe2cgMTBgAk9/view"}>
@@ -67,7 +68,7 @@ export default function HeroSection() {
           {
             socialMediaItems.map(({title, icon, url}, index) => {
               return (
-                  <a key={index} href={url} className="rounded-full bg-white hover:scale-110 hover:bg-white transition-all">
+                  <a key={index} target="_blank" href={url} className="rounded-full bg-white hover:scale-110 hover:bg-white transition-all">
                     {icon}
                   </a>
               )
