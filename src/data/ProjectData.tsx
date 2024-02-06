@@ -421,7 +421,6 @@ export const projectData: projectDataProps[] = [
       },
     ],
     github: "https://github.com/developervinay1/React-Native-LaundryApp",
-    websiteURL: "https://google.com/",
     detailedFeatures: [
       {
         title: "User Profiles",
