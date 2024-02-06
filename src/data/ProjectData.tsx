@@ -224,7 +224,7 @@ export const projectData: projectDataProps[] = [
       "Considering future enhancements, such as implementing user comments, social sharing features, and further customization options for user profiles",
   },
   {
-    id: 2,
+    id: 3,
     name: "Netflix App Clone",
     image: NetflixImage.src,
     technology: "React Native & Firebase",
@@ -294,7 +294,7 @@ export const projectData: projectDataProps[] = [
       "Considering future enhancements, such as user authentication, personalized recommendations, and additional features to elevate the Netflix clone's user experience.",
   },
   {
-    id: 3,
+    id: 4,
     name: "Spartx Dev",
     image: SpartxImage.src,
     technology: "Front-End Development, Shopify Liquid",
@@ -394,7 +394,7 @@ export const projectData: projectDataProps[] = [
       "Considering future enhancements, such as implementing customer accounts, integrating additional payment gateways, and expanding product categories.",
   },
   {
-    id: 4,
+    id: 5,
     name: "Laundry Application",
     image: LaundryImage.src,
     technology:
@@ -495,7 +495,7 @@ export const projectData: projectDataProps[] = [
       "Planning to enhance LaundryPal by implementing additional features such as push notifications, in-app chat support, and more customization options for users.",
   },
   {
-    id: 5,
+    id: 6,
     name: "CloudMedia Vault",
     image: CloudVaultImage.src,
     technology:
@@ -592,7 +592,7 @@ export const projectData: projectDataProps[] = [
       "Considering future enhancements, such as additional media management features, collaborative sharing options, and further security optimizations.",
   },
   {
-    id: 6,
+    id: 7,
     name: "Thread Clone",
     image: ThreadsImage.src,
     technology:
@@ -693,7 +693,7 @@ export const projectData: projectDataProps[] = [
       "Considering future enhancements, such as direct messaging features, video uploads, and additional customization options to further elevate the Threads Clone user experience.",
   },
   {
-    id: 7,
+    id: 8,
     name: "Stay Easy",
     image: Booking.src,
     technology:
@@ -794,7 +794,7 @@ export const projectData: projectDataProps[] = [
       "Considering future enhancements, such as additional search filters, personalized recommendations, and integration with payment gateways for seamless transactions.",
   },
   {
-    id: 8,
+    id: 9,
     name: "Bubble Game",
     image: BubbleImage.src,
     technology: "Html, Css and Javascript",
@@ -857,7 +857,7 @@ export const projectData: projectDataProps[] = [
       "Planning to incorporate additional game levels, challenges, and social sharing features for an enriched gaming community.",
   },
   {
-    id: 9,
+    id: 10,
     name: "Zomato Clone",
     image: ZomatoImage.src,
     technology:
