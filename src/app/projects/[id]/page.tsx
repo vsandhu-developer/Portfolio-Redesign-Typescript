@@ -1,9 +1,9 @@
-
 import React from "react";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { PiArrowSquareOutFill } from "react-icons/pi";
 import {projectData} from "@/data/ProjectData";
+import {Metadata} from "next";
 
 interface paramsType {
     params: {
@@ -11,6 +11,18 @@ interface paramsType {
     },
 }
 
+export async function generateMetadata({params: { id },}: paramsType): Promise<{ title: string, description: string }> {
+    const filteredData = projectData.filter(
+        (item) => Number(item.id) === Number(id)
+    );
+
+    const data = filteredData[0];
+
+    return {
+        title: data?.name,
+        description: data.description
+    };
+}
 export default function page({ params }: paramsType) {
     const id = params.id;
     const filteredData = projectData.filter(
