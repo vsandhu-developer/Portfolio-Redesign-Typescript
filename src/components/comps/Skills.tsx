@@ -12,7 +12,7 @@ import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { FaFileExcel, FaReact } from "react-icons/fa6";
 import { CiDatabase } from "react-icons/ci";
 import {BiLogoTypescript} from "react-icons/bi";
-import {SiSquarespace} from "react-icons/si";
+import {SiAppwrite, SiSquarespace} from "react-icons/si";
 import {TbBrandNextjs} from "react-icons/tb";
 
 interface skillsType {
@@ -107,6 +107,11 @@ export default function Skills() {
       skill: "SquareSpace",
       icon: <SiSquarespace color={"#000000"} />,
       color: "#000000"
+    },
+    {
+      skill: "Appwrite",
+      icon: <SiAppwrite color={"#fd366e"} />,
+      color: "#fd366e"
     }
   ];
   return (
