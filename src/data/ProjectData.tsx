@@ -46,7 +46,7 @@ export const projectData: projectDataProps[] = [
     technology: "React Native Firebase",
     role: "Full Stack Mobile App Developer",
     description:
-        "Developed a comprehensive JobFinder application using React Native and Firebase. This app facilitates job posting for recruiters and job applications for freelancers. Both recruiters and freelancers have dedicated profile pages, and freelancers can upload their resumes while creating their profiles.",
+      "Developed a comprehensive JobFinder application using React Native and Firebase. This app facilitates job posting for recruiters and job applications for freelancers. Both recruiters and freelancers have dedicated profile pages, and freelancers can upload their resumes while creating their profiles.",
     keyFeatures: [
       {
         id: 1,
@@ -73,12 +73,11 @@ export const projectData: projectDataProps[] = [
           {
             title: "Recruiter Job Posting",
             description:
-                "Recruiters can post job openings with detailed descriptions.",
+              "Recruiters can post job openings with detailed descriptions.",
           },
           {
             title: "Freelancer Job Application",
-            description:
-                "Freelancers can apply to jobs posted by recruiters.",
+            description: "Freelancers can apply to jobs posted by recruiters.",
           },
         ],
       },
@@ -88,12 +87,12 @@ export const projectData: projectDataProps[] = [
           {
             title: "Recruiter Profile",
             description:
-                "Recruiters have profiles to manage their job postings.",
+              "Recruiters have profiles to manage their job postings.",
           },
           {
             title: "Freelancer Profile",
             description:
-                "Freelancers have profiles with resume upload functionality.",
+              "Freelancers have profiles with resume upload functionality.",
           },
         ],
       },
@@ -103,26 +102,26 @@ export const projectData: projectDataProps[] = [
           {
             title: "Chat functionality",
             description:
-                "Real-time communication between recruiters and freelancers.",
+              "Real-time communication between recruiters and freelancers.",
           },
           {
             title: "Notification System",
             description:
-                "Instant notifications for job applications and updates.",
+              "Instant notifications for job applications and updates.",
           },
         ],
       },
     ],
     challenges:
-        "Balancing real-time communication with app performance, implementing a user-friendly profile creation process, and ensuring secure handling of resumes and personal information.",
+      "Balancing real-time communication with app performance, implementing a user-friendly profile creation process, and ensuring secure handling of resumes and personal information.",
     solution:
-        "Utilized React Native for cross-platform mobile development and Firebase for real-time database functionality. Implemented secure authentication measures and designed an intuitive UI for optimal user experience.",
+      "Utilized React Native for cross-platform mobile development and Firebase for real-time database functionality. Implemented secure authentication measures and designed an intuitive UI for optimal user experience.",
     results:
-        "The JobFinder app streamlines the job search and hiring process, providing a user-friendly platform for recruiters and freelancers. Positive feedback highlights the app's smooth navigation, real-time communication features, and secure profile management.",
+      "The JobFinder app streamlines the job search and hiring process, providing a user-friendly platform for recruiters and freelancers. Positive feedback highlights the app's smooth navigation, real-time communication features, and secure profile management.",
     learnings:
-        "Enhanced skills in mobile app development, gained proficiency in real-time communication implementation, and deepened understanding of secure data handling.",
+      "Enhanced skills in mobile app development, gained proficiency in real-time communication implementation, and deepened understanding of secure data handling.",
     futureImprovements:
-        "Considering future enhancements, such as expanding communication features, refining the job matching algorithm, and incorporating additional customization options for user profiles.",
+      "Considering future enhancements, such as expanding communication features, refining the job matching algorithm, and incorporating additional customization options for user profiles.",
   },
   {
     id: 2,
@@ -150,7 +149,7 @@ export const projectData: projectDataProps[] = [
         feature: "Responsive Design",
       },
     ],
-    websiteURL: "https://daily1blog.web.app/",
+    websiteURL: "https://daily1blog.netlify.app/",
     detailedFeatures: [
       {
         title: "User Authentication",
