@@ -15,8 +15,6 @@ interface navItemsType {
 }
 
 export default function Header() {
-
-
   const navItems: navItemsType[] = [
     {
       title: "Home",
@@ -29,6 +27,10 @@ export default function Header() {
     {
       title: "Projects",
       url: "/projects",
+    },
+    {
+      title: "Blogs",
+      url: "/blogs",
     },
   ];
 
