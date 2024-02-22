@@ -54,7 +54,9 @@ export default function UploadBlog() {
       <div className="max-w-4xl m-auto py-10">
         <h1 className="text-4xl">
           Upload --{" "}
-          <span className="text-sm">Share your new thoughts with other's</span>
+          <span className="text-sm">
+            Share your new thoughts with other&apos;s
+          </span>
         </h1>
 
         <div className="m-auto mt-10 shadow-sm px-4 bg-white py-6 rounded-md space-y-6">
