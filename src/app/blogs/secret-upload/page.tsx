@@ -1,80 +1,176 @@
 "use client";
-import { useRef, useState } from "react";
-import { Button } from "@/components/ui/button";
-import dynamic from "next/dynamic";
 
-const JoditEditor = dynamic(
-  () => import("jodit-react"),
-  { ssr: false } // This will prevent server-side rendering
-);
+import { useState } from "react";
+import { useEditor, EditorContent } from "@tiptap/react";
+import StarterKit from "@tiptap/starter-kit";
+import Underline from "@tiptap/extension-underline";
+import Italic from "@tiptap/extension-italic";
+import Bold from "@tiptap/extension-bold";
+import Strike from "@tiptap/extension-strike";
+import Heading from "@tiptap/extension-heading";
+import BulletList from "@tiptap/extension-bullet-list";
+import OrderedList from "@tiptap/extension-ordered-list";
+import TextAlign from "@tiptap/extension-text-align";
+import Document from "@tiptap/extension-document"; // ImpoImport extensions
+import { Button } from "@/components/ui/button";
 
 export default function UploadBlog() {
-  const initialState = {
+  const [title, setTitle] = useState("");
+  const [category, setCategory] = useState("");
+  const [blog, setBlog] = useState({
     title: "",
     content: "",
     category: "",
-  };
-  const [content, setContent] = useState("");
-  const editor = useRef(null);
-  const [title, setTitle] = useState("");
-  const [category, setCategory] = useState("");
-  const [blog, setBlog] = useState(initialState);
+  });
 
-  const categories = [
+  const editor = useEditor({
+    extensions: [StarterKit, Bold, Italic, Underline],
+    content: "Start Typing...",
+    onUpdate: ({ editor }) => {
+      const newContent = editor.getHTML();
+      setBlog((prevBlog) => ({ ...prevBlog, content: newContent }));
+    },
+  });
+
+  const handleTitleChange = (e: any) => {
+    setTitle(e.target.value);
+    setBlog((prevBlog) => ({ ...prevBlog, title: e.target.value }));
+  };
+
+  const handleCategoryChange = (e: any) => {
+    setCategory(e.target.value);
+    setBlog((prevBlog) => ({ ...prevBlog, category: e.target.value }));
+  };
+
+  const applyBold = () => {
+    editor?.chain().focus().toggleBold().run();
+  };
+
+  const applyItalic = () => {
+    editor?.chain().focus().toggleItalic().run();
+  };
+
+  const applyUnderline = () => {
+    editor?.chain().focus().toggleUnderline().run();
+  };
+
+  const applyStrike = () => {
+    editor?.chain().focus().toggleStrike().run();
+  };
+
+  const applyHeading = () => {
+    editor?.chain().focus().setHeading({ level: 1 }).run();
+  };
+
+  const applyBulletList = () => {
+    editor?.chain().focus().toggleBulletList().run();
+  };
+
+  const applyOrderedList = () => {
+    editor?.chain().focus().toggleOrderedList().run();
+  };
+
+  const richTextEditorButtons = [
     {
-      title: "Technology",
+      title: "B",
+      function: applyBold,
     },
     {
-      title: "Science",
+      title: "I",
+      function: applyItalic,
     },
     {
-      title: "Health",
+      title: "U",
+      function: applyUnderline,
     },
     {
-      title: "Business",
+      title: "S",
+      function: applyStrike,
     },
     {
-      title: "Entertainment",
+      title: "H1",
+      function: applyHeading,
     },
     {
-      title: "Sports",
+      title: "UL",
+      function: applyBulletList,
     },
     {
-      title: "Education",
-    },
-    {
-      title: "Travel",
-    },
-    {
-      title: "Lifestyle",
+      title: "OL",
+      function: applyOrderedList,
     },
   ];
+
+  const getBlogsInfo = () => {
+    if (
+      !title ||
+      !blog.content ||
+      !category ||
+      category === "Choose Category"
+    ) {
+      alert("Please fill all the fields");
+      return;
+    }
+
+    // Handle blog submission logic here
+    console.log("Blog submitted:", blog);
+  };
+
+  const categories = [
+    "Choose Category",
+    "Technology",
+    "Science",
+    "Health",
+    "Business",
+    "Entertainment",
+    "Sports",
+    "Education",
+    "Travel",
+    "Lifestyle",
+  ];
+
   return (
     <div>
       <div className="max-w-4xl m-auto py-10">
         <h1 className="text-4xl">
           Upload --{" "}
-          <span className="text-sm">
-            Share your new thoughts with other&apos;s
-          </span>
+          <span className="text-sm">Share your new thoughts with others</span>
         </h1>
 
-        <div className="m-auto mt-10 shadow-sm px-4 bg-white py-6 rounded-md space-y-6">
-          <input className="p-3 rounded-lg w-full border" placeholder="Title" />
-          <JoditEditor
-            ref={editor}
-            value={content}
-            onChange={(newContent) => setContent(newContent)}
+        <div className="m-auto mt-10 shadow-sm px-4 bg-white py-8 rounded-md space-y-6">
+          <input
+            className="p-3 rounded-lg w-full border"
+            placeholder="Title"
+            onChange={handleTitleChange}
           />
+          <div className="toolbar flex items-center gap-4">
+            {richTextEditorButtons.map((button) => (
+              <Button
+                key={button.title}
+                onClick={button.function}
+                className="bg-gray-100 text-black hover:text-white"
+              >
+                {button.title}
+              </Button>
+            ))}
+          </div>
+          <EditorContent editor={editor} />
           <fieldset className="space-y-4">
             <legend>Choose Category</legend>
-            <select className="p-3 rounded-lg w-full border">
+            <select
+              className="p-3 rounded-lg w-full border"
+              onChange={handleCategoryChange}
+            >
               {categories.map((category) => (
-                <option key={category.title}>{category.title}</option>
+                <option key={category} value={category}>
+                  {category}
+                </option>
               ))}
             </select>
           </fieldset>
-          <Button className="bg-red-600">Upload Now</Button>
+          <Button className="bg-red-600" onClick={getBlogsInfo}>
+            Upload Now
+          </Button>
         </div>
       </div>
     </div>
