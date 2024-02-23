@@ -13,10 +13,16 @@ import OrderedList from "@tiptap/extension-ordered-list";
 import TextAlign from "@tiptap/extension-text-align";
 import Document from "@tiptap/extension-document"; // ImpoImport extensions
 import { Button } from "@/components/ui/button";
+import { doc, setDoc } from "firebase/firestore";
+import { db } from "../../../../firebase";
+import dynamic from "next/dynamic";
+
+const JodiatEditor = dynamic(() => import("jodit-react"), { ssr: false });
 
 export default function UploadBlog() {
   const [title, setTitle] = useState("");
   const [category, setCategory] = useState("");
+  const [content, setContent] = useState("");
   const [blog, setBlog] = useState({
     title: "",
     content: "",
@@ -102,18 +108,19 @@ export default function UploadBlog() {
   ];
 
   const getBlogsInfo = () => {
-    if (
-      !title ||
-      !blog.content ||
-      !category ||
-      category === "Choose Category"
-    ) {
+    if (!title || !content || !category || category === "Choose Category") {
       alert("Please fill all the fields");
       return;
-    }
+    } else {
+      const documentTitle = title.replace(/\s/g, "").toLowerCase();
+      const docRef = doc(db, "blogs", documentTitle);
 
-    // Handle blog submission logic here
-    console.log("Blog submitted:", blog);
+      setDoc(docRef, {
+        title: title,
+        content: content,
+        category: category,
+      });
+    }
   };
 
   const categories = [
@@ -139,12 +146,13 @@ export default function UploadBlog() {
 
         <div className="m-auto mt-10 shadow-sm px-4 bg-white py-8 rounded-md space-y-6">
           <input
-            className="p-3 rounded-lg w-full border"
+            className="p-3 rounded-lg w-full border text-black"
             placeholder="Title"
             onChange={handleTitleChange}
           />
-          <div className="toolbar flex items-center gap-4">
-            {richTextEditorButtons.map((button) => (
+          <div>
+            {/* Tiptap Editor */}
+            {/* {richTextEditorButtons.map((button) => (
               <Button
                 key={button.title}
                 onClick={button.function}
@@ -153,8 +161,11 @@ export default function UploadBlog() {
                 {button.title}
               </Button>
             ))}
+          </div> */}
+            {/* <EditorContent editor={editor} /> */}
+
+            <JodiatEditor onChange={(newContent) => setContent(newContent)} />
           </div>
-          <EditorContent editor={editor} />
           <fieldset className="space-y-4">
             <legend>Choose Category</legend>
             <select
