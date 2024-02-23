@@ -74,7 +74,10 @@ export default function UploadBlog() {
           </div> */}
             {/* <EditorContent editor={editor} /> */}
 
-            <JodiatEditor onChange={(newContent) => setContent(newContent)} />
+            <JodiatEditor
+              value="Start Writing..."
+              onChange={(newContent) => setContent(newContent)}
+            />
           </div>
           <fieldset className="space-y-4">
             <legend>Choose Category</legend>
