@@ -1,21 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { useEditor, EditorContent } from "@tiptap/react";
-import StarterKit from "@tiptap/starter-kit";
-import Underline from "@tiptap/extension-underline";
-import Italic from "@tiptap/extension-italic";
-import Bold from "@tiptap/extension-bold";
-import Strike from "@tiptap/extension-strike";
-import Heading from "@tiptap/extension-heading";
-import BulletList from "@tiptap/extension-bullet-list";
-import OrderedList from "@tiptap/extension-ordered-list";
-import TextAlign from "@tiptap/extension-text-align";
-import Document from "@tiptap/extension-document"; // ImpoImport extensions
 import { Button } from "@/components/ui/button";
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "../../../../firebase";
 import dynamic from "next/dynamic";
+import { categories } from "@/data/StaticCategories";
 
 const JodiatEditor = dynamic(() => import("jodit-react"), { ssr: false });
 
@@ -29,15 +19,6 @@ export default function UploadBlog() {
     category: "",
   });
 
-  const editor = useEditor({
-    extensions: [StarterKit, Bold, Italic, Underline],
-    content: "Start Typing...",
-    onUpdate: ({ editor }) => {
-      const newContent = editor.getHTML();
-      setBlog((prevBlog) => ({ ...prevBlog, content: newContent }));
-    },
-  });
-
   const handleTitleChange = (e: any) => {
     setTitle(e.target.value);
     setBlog((prevBlog) => ({ ...prevBlog, title: e.target.value }));
@@ -47,65 +28,6 @@ export default function UploadBlog() {
     setCategory(e.target.value);
     setBlog((prevBlog) => ({ ...prevBlog, category: e.target.value }));
   };
-
-  const applyBold = () => {
-    editor?.chain().focus().toggleBold().run();
-  };
-
-  const applyItalic = () => {
-    editor?.chain().focus().toggleItalic().run();
-  };
-
-  const applyUnderline = () => {
-    editor?.chain().focus().toggleUnderline().run();
-  };
-
-  const applyStrike = () => {
-    editor?.chain().focus().toggleStrike().run();
-  };
-
-  const applyHeading = () => {
-    editor?.chain().focus().setHeading({ level: 1 }).run();
-  };
-
-  const applyBulletList = () => {
-    editor?.chain().focus().toggleBulletList().run();
-  };
-
-  const applyOrderedList = () => {
-    editor?.chain().focus().toggleOrderedList().run();
-  };
-
-  const richTextEditorButtons = [
-    {
-      title: "B",
-      function: applyBold,
-    },
-    {
-      title: "I",
-      function: applyItalic,
-    },
-    {
-      title: "U",
-      function: applyUnderline,
-    },
-    {
-      title: "S",
-      function: applyStrike,
-    },
-    {
-      title: "H1",
-      function: applyHeading,
-    },
-    {
-      title: "UL",
-      function: applyBulletList,
-    },
-    {
-      title: "OL",
-      function: applyOrderedList,
-    },
-  ];
 
   const getBlogsInfo = () => {
     if (!title || !content || !category || category === "Choose Category") {
@@ -119,22 +41,10 @@ export default function UploadBlog() {
         title: title,
         content: content,
         category: category,
+        publishedTime: new Date().toISOString(),
       });
     }
   };
-
-  const categories = [
-    "Choose Category",
-    "Technology",
-    "Science",
-    "Health",
-    "Business",
-    "Entertainment",
-    "Sports",
-    "Education",
-    "Travel",
-    "Lifestyle",
-  ];
 
   return (
     <div>
