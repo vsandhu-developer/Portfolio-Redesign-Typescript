@@ -73,6 +73,17 @@
   body {
     @apply bg-background text-foreground;
   }
+  ul,
+  menu {
+    list-style: inside;
+  }
+  ol {
+    list-style: decimal inside;
+  }
+}
+
+.decimalLeadingZero {
+  list-style-type: decimal-leading-zero;
 }
 
 .customMargin {

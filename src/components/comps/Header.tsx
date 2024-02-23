@@ -41,7 +41,10 @@ export default function Header() {
         <ul className="flex space-x-10">
           {navItems.map(({ title, url }, index) => {
             return (
-              <li key={index} className="cursor-pointer text-sm">
+              <li
+                key={index}
+                className="cursor-pointer text-sm decimalLeadingZero"
+              >
                 <Link href={url}>{title}</Link>
               </li>
             );
