@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { doc, getDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
@@ -52,8 +52,13 @@ export default function ReadBlog({ params }: propsType) {
     <div>
       <div className="max-w-4xl m-auto py-12">
         <h1 className="text-3xl my-2 font-bold">{blog.title}</h1>
-        <p className="text-gray-800 font-medium my-2">{blog.category}</p>
-        <p className="mt-5" dangerouslySetInnerHTML={{__html: blog.content}} />
+        <p className="text-gray-800 font-medium my-2 dark:text-gray-300">
+          {blog.category}
+        </p>
+        <p
+          className="mt-5"
+          dangerouslySetInnerHTML={{ __html: blog.content }}
+        />
       </div>
     </div>
   );

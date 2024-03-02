@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/comps/Header";
 import NextTopLoader from "nextjs-toploader";
 import Footer from "@/components/comps/Footer";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const inter = Jost({
   subsets: ["latin"],
@@ -41,9 +42,11 @@ export default function RootLayout({
           zIndex={1600}
           showAtBottom={false}
         />
-        <Header />
-        {children}
-        <Footer />
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

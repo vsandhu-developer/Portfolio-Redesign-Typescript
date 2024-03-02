@@ -8,6 +8,7 @@ import {
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { TextAlignRightIcon } from "@radix-ui/react-icons";
+import { DarkModeToggle } from "./Toggle";
 
 interface navItemsType {
   title: string;
@@ -53,6 +54,7 @@ export default function Header() {
         <Button asChild>
           <Link href={"/contact"}>Contact Me</Link>
         </Button>
+        <DarkModeToggle />
       </div>
       <Menubar className="md:hidden">
         <MenubarMenu>
