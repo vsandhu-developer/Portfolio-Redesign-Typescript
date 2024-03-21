@@ -11,9 +11,14 @@ import {
 import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { FaFileExcel, FaReact } from "react-icons/fa6";
 import { CiDatabase } from "react-icons/ci";
-import {BiLogoTypescript} from "react-icons/bi";
-import {SiAppwrite, SiSquarespace} from "react-icons/si";
-import {TbBrandNextjs} from "react-icons/tb";
+import { BiLogoTypescript } from "react-icons/bi";
+import {
+  SiAndroidstudio,
+  SiAppwrite,
+  SiKotlin,
+  SiSquarespace,
+} from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 
 interface skillsType {
   skill: string;
@@ -106,13 +111,18 @@ export default function Skills() {
     {
       skill: "SquareSpace",
       icon: <SiSquarespace color={"#000000"} />,
-      color: "#000000"
+      color: "#000000",
     },
     {
       skill: "Appwrite",
       icon: <SiAppwrite color={"#fd366e"} />,
-      color: "#fd366e"
-    }
+      color: "#fd366e",
+    },
+    {
+      skill: "Kotlin",
+      icon: <SiKotlin color="#E24462" />,
+      color: "#E24462",
+    },
   ];
   return (
     <div id="skills" className="mb-32">
