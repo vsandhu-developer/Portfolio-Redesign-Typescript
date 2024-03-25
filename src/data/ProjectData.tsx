@@ -8,6 +8,8 @@ import Booking from "@/assets/mockups/Booking.png";
 import BubbleImage from "@/assets/mockups/BubbleGame.png";
 import ZomatoImage from "@/assets/mockups/Zomato.png";
 import JobFinderAppImage from "@/assets/mockups/JobFinderApp.png";
+import SyncShareImage from "@/assets/mockups/SyncShare.png";
+import SpotifyCloneImage from "@/assets/mockups/SpotifyClone.png";
 
 // Image Check
 
@@ -40,6 +42,162 @@ type projectDataProps = {
 
 export const projectData: projectDataProps[] = [
   {
+    id: 12,
+    name: "SyncShare",
+    image: SyncShareImage.src,
+    technology:
+      "React.js, Node.js, Express.js, MongoDB, Firebase (Authentication), HTML, CSS",
+    role: "Full Stack Developer",
+    description:
+      "Introducing SyncShare, a file sharing website developed using React.js, Node.js, Express.js, MongoDB, and Firebase for authentication. With SyncShare, users can securely upload and share files with anyone, anywhere. The platform offers advanced features such as file protection with passwords, ensuring data privacy and security. The intuitive user interface enhances the sharing experience, making SyncShare a go-to platform for seamless file exchange.",
+    keyFeatures: [
+      {
+        id: 1,
+        feature: "Secure File Upload",
+      },
+      {
+        id: 2,
+        feature: "Password Protection",
+      },
+      {
+        id: 3,
+        feature: "User Authentication",
+      },
+    ],
+    websiteURL: "https://sync-sharing.netlify.app",
+    detailedFeatures: [
+      {
+        title: "Secure File Upload",
+        features: [
+          {
+            title: "Encrypted Uploads",
+            description: "Ensures data security during file transfer.",
+          },
+          {
+            title: "File Size Limit",
+            description:
+              "Allows users to upload files within specified size limits.",
+          },
+        ],
+      },
+      {
+        title: "Password Protection",
+        features: [
+          {
+            title: "File Encryption",
+            description:
+              "Provides option to encrypt files with passwords for added security.",
+          },
+          {
+            title: "Password Management",
+            description: "Allows users to manage passwords for shared files.",
+          },
+        ],
+      },
+      {
+        title: "User Authentication",
+        features: [
+          {
+            title: "Firebase Authentication",
+            description:
+              "Integration of Firebase authentication for secure user accounts.",
+          },
+          {
+            title: "Profile Creation",
+            description: "Enables users to create and manage their profiles.",
+          },
+        ],
+      },
+    ],
+    challenges:
+      "Implementing secure file upload and integrating password protection functionality.",
+    solution:
+      "Leveraged Node.js and Express.js for backend development, integrating with MongoDB for efficient data storage. Utilized Firebase for user authentication to ensure secure access to the platform. Employed React.js for dynamic front-end development, providing users with an intuitive interface.",
+    results:
+      "Successfully developed SyncShare, a reliable file sharing platform with robust security features, ensuring user privacy and data protection.",
+    learnings:
+      "Gained expertise in implementing file upload functionality and integrating password protection, further enhancing my skills in full-stack development.",
+    futureImprovements:
+      "Planning to enhance SyncShare with features such as file expiration dates and user access controls, to provide users with more control over their shared files.",
+  },
+  {
+    id: 13,
+    name: "Spotify Clone",
+    image: SpotifyCloneImage.src,
+    technology: "Next.js, TypeScript, Supabase, HTML, CSS",
+    role: "Full Stack Developer",
+    description:
+      "Presenting Spotify Clone, a music streaming platform developed using Next.js, TypeScript, and Supabase. With Spotify Clone, users can enjoy their favorite music, upload their own songs, and create playlists. The integration with Supabase ensures seamless data management and user authentication. The platform's intuitive design and robust functionality provide users with an immersive music listening experience, making Spotify Clone a top choice for music enthusiasts.",
+    keyFeatures: [
+      {
+        id: 1,
+        feature: "Music Streaming",
+      },
+      {
+        id: 2,
+        feature: "Song Upload",
+      },
+      {
+        id: 3,
+        feature: "Playlist Management",
+      },
+    ],
+    github: "https://github.com/Vinaypartap-Singh/Spotify-Clone",
+    detailedFeatures: [
+      {
+        title: "Music Streaming",
+        features: [
+          {
+            title: "Seamless Playback",
+            description: "Provides uninterrupted music streaming experience.",
+          },
+          {
+            title: "Search and Discover",
+            description: "Allows users to search and discover new music.",
+          },
+        ],
+      },
+      {
+        title: "Song Upload",
+        features: [
+          {
+            title: "Upload Your Songs",
+            description:
+              "Enables users to upload their own songs to the platform.",
+          },
+          {
+            title: "Metadata Management",
+            description: "Allows users to manage metadata for uploaded songs.",
+          },
+        ],
+      },
+      {
+        title: "Playlist Management",
+        features: [
+          {
+            title: "Create Playlists",
+            description: "Enables users to create and manage playlists.",
+          },
+          {
+            title: "Liked Playlist",
+            description:
+              "Allows users to add songs to a liked playlist for easy access.",
+          },
+        ],
+      },
+    ],
+    challenges:
+      "Implementing seamless music streaming and integrating song upload functionality.",
+    solution:
+      "Utilized Next.js for server-side rendering and TypeScript for type safety. Integrated with Supabase for efficient data storage and user authentication. Leveraged CSS for designing an intuitive user interface.",
+    results:
+      "Successfully developed Spotify Clone, a feature-rich music streaming platform with robust functionality, resulting in enhanced user engagement and satisfaction.",
+    learnings:
+      "Acquired expertise in implementing music streaming functionality and managing user-generated content, further honing my skills in full-stack development.",
+    futureImprovements:
+      "Planning to enhance Spotify Clone with features such as personalized recommendations and social sharing options, to provide users with a more personalized music experience.",
+  },
+  {
     id: 1,
     name: "JobFinder App",
     image: JobFinderAppImage.src,
@@ -65,7 +223,7 @@ export const projectData: projectDataProps[] = [
         feature: "Real-time Communication",
       },
     ],
-    github: "https://github.com/developervinay1/JobFinderApp-React-Native",
+    github: "https://github.com/Vinaypartap-Singh/JobFinderApp-React-Native",
     detailedFeatures: [
       {
         title: "Job Posting and Application",
@@ -248,7 +406,7 @@ export const projectData: projectDataProps[] = [
         feature: "Responsive design for optimal viewing on various device",
       },
     ],
-    github: "https://github.com/developervinay1/NetflixApp-RN",
+    github: "https://github.com/Vinaypartap-Singh/NetflixApp-RN",
     detailedFeatures: [
       {
         title: "Dynamic Data",
@@ -419,7 +577,7 @@ export const projectData: projectDataProps[] = [
         feature: "Automatic Location Detection",
       },
     ],
-    github: "https://github.com/developervinay1/React-Native-LaundryApp",
+    github: "https://github.com/Vinaypartap-Singh/React-Native-LaundryApp",
     detailedFeatures: [
       {
         title: "User Profiles",
@@ -516,7 +674,8 @@ export const projectData: projectDataProps[] = [
         feature: "User Friendly Interface",
       },
     ],
-    github: "https://github.com/developervinay1/ImageUploaderApp-React-Native",
+    github:
+      "https://github.com/Vinaypartap-Singh/ImageUploaderApp-React-Native",
     detailedFeatures: [
       {
         title: "Authentication",
@@ -617,7 +776,7 @@ export const projectData: projectDataProps[] = [
         feature: "Profile Pages",
       },
     ],
-    github: "https://github.com/developervinay1/ThreadsClone-RN",
+    github: "https://github.com/Vinaypartap-Singh/ThreadsClone-RN",
     detailedFeatures: [
       {
         title: "User Authentication",
@@ -718,7 +877,7 @@ export const projectData: projectDataProps[] = [
         feature: "User Profile",
       },
     ],
-    github: "https://github.com/developervinay1/BookingApp-RN",
+    github: "https://github.com/Vinaypartap-Singh/BookingApp-RN",
     detailedFeatures: [
       {
         title: "User Authentication",
@@ -812,7 +971,7 @@ export const projectData: projectDataProps[] = [
       },
     ],
     github:
-      "https://github.com/developervinay1/Javascript-Project-Bubble-Game/tree/main",
+      "https://github.com/Vinaypartap-Singh/Javascript-Project-Bubble-Game/tree/main",
     websiteURL: "https://bubble-game-vinay.netlify.app/",
     detailedFeatures: [
       {
