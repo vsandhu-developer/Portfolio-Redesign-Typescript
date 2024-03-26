@@ -16,7 +16,7 @@ export default function HeroSection() {
     {
       title: "Github",
       icon: <GitHubLogoIcon color="white" width={25} height={25} />,
-      url: "https://github.com/developervinay1/",
+      url: "https://github.com/Vinaypartap-Singh/",
     },
     {
       title: "Linked In",
