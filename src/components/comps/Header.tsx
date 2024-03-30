@@ -9,32 +9,33 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import { TextAlignRightIcon } from "@radix-ui/react-icons";
 import { DarkModeToggle } from "./Toggle";
+import MenuDrawer from "./MenuDrawer";
 
 interface navItemsType {
   title: string;
   url: string;
 }
 
-export default function Header() {
-  const navItems: navItemsType[] = [
-    {
-      title: "Home",
-      url: "/",
-    },
-    {
-      title: "Resume",
-      url: "/resume",
-    },
-    {
-      title: "Projects",
-      url: "/projects",
-    },
-    {
-      title: "Blogs",
-      url: "/blogs",
-    },
-  ];
+export const navItems: navItemsType[] = [
+  {
+    title: "Home",
+    url: "/",
+  },
+  {
+    title: "Resume",
+    url: "/resume",
+  },
+  {
+    title: "Projects",
+    url: "/projects",
+  },
+  {
+    title: "Blogs",
+    url: "/blogs",
+  },
+];
 
+export default function Header() {
   return (
     <div className="flex justify-between items-center py-6 w-full h-[90px] px-10">
       <h2 className="font-bold text-lg">Vinaypartap Singh</h2>
@@ -46,7 +47,7 @@ export default function Header() {
                 key={index}
                 className="cursor-pointer text-sm decimalLeadingZero"
               >
-                <Link href={url}>{title}</Link>
+                <Link href={`${url}`}>{title}</Link>
               </li>
             );
           })}
@@ -56,27 +57,10 @@ export default function Header() {
         </Button>
         <DarkModeToggle />
       </div>
-      <Menubar className="md:hidden">
-        <MenubarMenu>
-          <MenubarTrigger className="border-none outline-none">
-            <TextAlignRightIcon />
-          </MenubarTrigger>
-          <MenubarContent className="mx-10">
-            {navItems.map(({ title, url }, index) => {
-              return (
-                <MenubarItem key={index} asChild className="p-6">
-                  <Link href={url}>{title}</Link>
-                </MenubarItem>
-              );
-            })}
-            <MenubarItem asChild className="p-6">
-              <Button asChild className="cursor-pointer m-[16px]">
-                <Link href={"/contact"}>Contact Me</Link>
-              </Button>
-            </MenubarItem>
-          </MenubarContent>
-        </MenubarMenu>
-      </Menubar>
+      <div className="md:hidden flex items-center gap-x-4">
+        <DarkModeToggle />
+        <MenuDrawer />
+      </div>
     </div>
   );
 }
