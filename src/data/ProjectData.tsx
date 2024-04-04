@@ -10,6 +10,7 @@ import ZomatoImage from "@/assets/mockups/Zomato.png";
 import JobFinderAppImage from "@/assets/mockups/JobFinderApp.png";
 import SyncShareImage from "@/assets/mockups/SyncShare.png";
 import SpotifyCloneImage from "@/assets/mockups/SpotifyClone.png";
+import VMCHAT from "@/assets/mockups/VmChatApplication.png";
 
 // Image Check
 
@@ -41,6 +42,75 @@ type projectDataProps = {
 };
 
 export const projectData: projectDataProps[] = [
+  {
+    id: 1,
+    name: "VMChat",
+    image: VMCHAT.src,
+    technology: "React Native, Firebase (Authentication, Realtime Database)",
+    role: "Mobile App Developer",
+    description:
+      "VMChat is a chat application developed using React Native with Firebase integration. Users can create accounts and engage in chat conversations. The app includes room functionality, allowing users to join different chat rooms based on their interests or topics.",
+    keyFeatures: [
+      {
+        id: 1,
+        feature: "Account Creation",
+      },
+      {
+        id: 2,
+        feature: "Chat Rooms",
+      },
+      {
+        id: 3,
+        feature: "Real-time Messaging",
+      },
+      {
+        id: 4,
+        feature: "Firebase Integration",
+      },
+    ],
+    github: "https://github.com/Vinaypartap-Singh/Chat-App-RN",
+    detailedFeatures: [
+      {
+        title: "Real-time Messaging",
+        features: [
+          {
+            title: "Instant Messaging",
+            description:
+              "Messages are sent and received instantly in real-time, ensuring quick communication.",
+          },
+          {
+            title: "Message Delivery Status",
+            description:
+              "Users can see the delivery status of their messages, such as delivered or read.",
+          },
+        ],
+      },
+      {
+        title: "Firebase Integration",
+        features: [
+          {
+            title: "Authentication",
+            description:
+              "Firebase Authentication is used to authenticate users securely.",
+          },
+          {
+            title: "Realtime Database",
+            description:
+              "Firebase Realtime Database is utilized for storing and synchronizing chat messages in real-time.",
+          },
+        ],
+      },
+    ],
+    challenges: "Creating rooms in Firebase.",
+    solution:
+      "Rooms are created by sorting the IDs of the logged-in user and the clicked user, ensuring unique and identifiable chat rooms.",
+    results:
+      "Successfully implemented room creation functionality, enabling users to engage in chat conversations seamlessly.",
+    learnings:
+      "Learned about sorting algorithms and the importance of creating unique identifiers for chat rooms. Gained insights into implementing chat functionality within Firebase Realtime Database.",
+    futureImprovements:
+      "Implement additional features such as multimedia messaging (images, videos). Enhance user experience with features like message notifications. Improve security features such as end-to-end encryption for messages. Implement user profile customization options.Enhance room management functionalities such as moderation tools.",
+  },
   {
     id: 12,
     name: "SyncShare",
