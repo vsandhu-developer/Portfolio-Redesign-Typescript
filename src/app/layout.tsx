@@ -42,7 +42,7 @@ export default function RootLayout({
           zIndex={1600}
           showAtBottom={false}
         />
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <Header />
           {children}
           <Footer />
