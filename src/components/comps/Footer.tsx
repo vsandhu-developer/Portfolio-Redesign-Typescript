@@ -37,6 +37,7 @@ export default function Footer() {
         {socialIcons.map(({ title, icon, url }, index) => {
           return (
             <a
+              aria-label={title}
               key={index}
               href={url}
               className="rounded-full bg-white hover:scale-110 hover:bg-white transition-all"

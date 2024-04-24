@@ -49,7 +49,11 @@ export default function MenuDrawer() {
               {navItems.map(({ title, url }, index) => {
                 return (
                   <li className="decimalLeadingZero" key={index}>
-                    <Link href={`${url}`} className="text-3xl">
+                    <Link
+                      href={`${url}`}
+                      aria-label={`${title}`}
+                      className="text-3xl"
+                    >
                       {title}
                     </Link>
                   </li>
