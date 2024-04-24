@@ -77,6 +77,7 @@ export default function HeroSection() {
           {socialMediaItems.map(({ title, icon, url }, index) => {
             return (
               <a
+                aria-label={title}
                 key={index}
                 target="_blank"
                 href={url}

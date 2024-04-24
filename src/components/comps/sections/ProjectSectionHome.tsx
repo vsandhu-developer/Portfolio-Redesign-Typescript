@@ -42,11 +42,17 @@ export default function ProjectsHome() {
                       {data.name}
                     </h4>
                     <div className="flex gap-2 items-center">
-                      <Link href={`/projects/${data.id}`}>
+                      <Link
+                        href={`/projects/${data.id}`}
+                        aria-label={
+                          data.name + " " + "created using " + data.technology
+                        }
+                      >
                         <PiArrowSquareOutFill className="text-sm flex items-center gap-1" />
                       </Link>
                       {data.github && (
                         <Link
+                          aria-label={`${data.name} Github URL`}
                           href={data.github}
                           className="text-sm flex items-center gap-1"
                         >
@@ -55,6 +61,7 @@ export default function ProjectsHome() {
                       )}
                       {data.websiteURL && (
                         <Link
+                          aria-label={`${data.name} Website URL`}
                           href={data.websiteURL}
                           className="text-sm flex items-center gap-1"
                         >
@@ -68,15 +75,20 @@ export default function ProjectsHome() {
                     {data.github && (
                       <Button
                         asChild
+                        name={`${data.name} Github URL`}
                         // className="text-sm flex items-center gap-1"
                       >
-                        <Link href={data.github}>
+                        <Link
+                          href={data.github}
+                          aria-label={`${data.name} Github URL`}
+                        >
                           Github <FaGithub className="ml-2" />
                         </Link>
                       </Button>
                     )}
                     {data.websiteURL && (
                       <Button
+                        name={"Website URL"}
                         variant={"outline"}
                         asChild
                         // className="text-sm flex items-center gap-1"

@@ -51,11 +51,17 @@ export default function Projects() {
                       {data.name}
                     </h4>
                     <div className="flex gap-2 items-center">
-                      <Link href={`/projects/${data.id}`}>
+                      <Link
+                        href={`/projects/${data.id}`}
+                        aria-label={
+                          data.name + " " + "created using " + data.technology
+                        }
+                      >
                         <PiArrowSquareOutFill className="text-sm flex items-center gap-1" />
                       </Link>
                       {data.github && (
                         <Link
+                          aria-label={`${data.name} Github URL`}
                           href={data.github}
                           className="text-sm flex items-center gap-1"
                         >
@@ -64,6 +70,7 @@ export default function Projects() {
                       )}
                       {data.websiteURL && (
                         <Link
+                          aria-label={`${data.name} Website URL`}
                           href={data.websiteURL}
                           className="text-sm flex items-center gap-1"
                         >
@@ -76,21 +83,27 @@ export default function Projects() {
                   <div className="flex gap-4 items-center px-5 pb-4">
                     {data.github && (
                       <Button
+                        name={`${data.name} Github URL`}
                         asChild
                         // className="text-sm flex items-center gap-1"
                       >
-                        <Link href={data.github}>
+                        <Link
+                          href={data.github}
+                          aria-label={`${data.name} Github URL`}
+                        >
                           Github <FaGithub className="ml-2" />
                         </Link>
                       </Button>
                     )}
                     {data.websiteURL && (
                       <Button
+                        name={`${data.name} Website URL`}
                         variant={"outline"}
                         asChild
                         // className="text-sm flex items-center gap-1"
                       >
                         <Link
+                          aria-label={`${data.name} Website URL`}
                           href={data.websiteURL}
                           className="text-sm flex items-center gap-1"
                         >

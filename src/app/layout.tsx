@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Jost, Poppins } from "next/font/google";
+import { Jost } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/comps/Header";
 import NextTopLoader from "nextjs-toploader";
