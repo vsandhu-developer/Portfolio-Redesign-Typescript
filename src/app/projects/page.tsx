@@ -83,7 +83,7 @@ export default function Projects() {
                   <div className="flex gap-4 items-center px-5 pb-4">
                     {data.github && (
                       <Button
-                        name={`${data.name} Github URL`}
+                        aria-label={`${data.name} Github URL`}
                         asChild
                         // className="text-sm flex items-center gap-1"
                       >
@@ -97,7 +97,7 @@ export default function Projects() {
                     )}
                     {data.websiteURL && (
                       <Button
-                        name={`${data.name} Website URL`}
+                        aria-label={`${data.name} Website URL`}
                         variant={"outline"}
                         asChild
                         // className="text-sm flex items-center gap-1"

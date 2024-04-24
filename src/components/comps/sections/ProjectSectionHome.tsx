@@ -75,7 +75,7 @@ export default function ProjectsHome() {
                     {data.github && (
                       <Button
                         asChild
-                        name={`${data.name} Github URL`}
+                        aria-label={`${data.name} Github URL`}
                         // className="text-sm flex items-center gap-1"
                       >
                         <Link
@@ -88,7 +88,7 @@ export default function ProjectsHome() {
                     )}
                     {data.websiteURL && (
                       <Button
-                        name={"Website URL"}
+                        aria-label={"Website URL"}
                         variant={"outline"}
                         asChild
                         // className="text-sm flex items-center gap-1"
@@ -108,8 +108,10 @@ export default function ProjectsHome() {
           })}
         </div>
         <div className="text-center mb-20 mt-10">
-          <Button variant={"outline"} asChild>
-            <Link href={"/projects"}>View All</Link>
+          <Button aria-label="View Projects" variant={"outline"} asChild>
+            <Link href={"/projects"} aria-label="View Projects">
+              View All
+            </Link>
           </Button>
         </div>
       </div>
