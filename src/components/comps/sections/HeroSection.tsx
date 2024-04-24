@@ -56,17 +56,20 @@ export default function HeroSection() {
 
         <div className="space-x-6 flex items-center flex-wrap justify-center gap-y-4">
           <Button
+            aria-label="Contact Me"
             asChild
             className="px-10 py-6 rounded-full hover:scale-110 transition-all"
           >
             <Link href="/contact">Contact Me</Link>
           </Button>
           <Button
+            aria-label="Download Resume"
             asChild
             className="px-10 py-6 rounded-full hover:scale-110 transition-all bg-white text-black hover:text-white dark-hover:bg-black dark-hover:text-white dark:bg-white dark:text-black"
           >
             <a
               target={"_blank"}
+              aria-label="Download Resume"
               href={
                 "https://drive.google.com/file/d/1vXiQ64bsy40LD5mkzylpFe2cgMTBgAk9/view"
               }
