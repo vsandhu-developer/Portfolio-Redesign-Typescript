@@ -12,6 +12,8 @@ import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { FaFileExcel, FaReact } from "react-icons/fa6";
 import { CiDatabase } from "react-icons/ci";
 import { BiLogoTypescript } from "react-icons/bi";
+import { FaSwift, FaPython } from "react-icons/fa";
+
 import {
   SiAndroidstudio,
   SiAppwrite,
@@ -19,6 +21,7 @@ import {
   SiSquarespace,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
+import { GiWireframeGlobe } from "react-icons/gi";
 
 interface skillsType {
   skill: string;
@@ -122,6 +125,21 @@ export default function Skills() {
       skill: "Kotlin",
       icon: <SiKotlin color="#E24462" />,
       color: "#E24462",
+    },
+    {
+      skill: "Swift UI",
+      icon: <FaSwift color="#03D4FF" />,
+      color: "#03D4FF",
+    },
+    {
+      skill: "Wireframing",
+      icon: <GiWireframeGlobe color="#FF9900 " />,
+      color: "#FF9900 ",
+    },
+    {
+      skill: "Python",
+      icon: <FaPython color="#4584b6" />,
+      color: "#4584b6",
     },
   ];
   return (
