@@ -46,7 +46,8 @@ export const projectData: projectDataProps[] = [
     id: 1,
     name: "VMChat",
     image: VMCHAT.src,
-    technology: "React Native, Firebase (Authentication, Realtime Database)",
+    technology:
+      "React Native, Firebase (Realtime Status, Authentication, Realtime Data)",
     role: "Mobile App Developer",
     description:
       "VMChat is a chat application developed using React Native with Firebase integration. Users can create accounts and engage in chat conversations. The app includes room functionality, allowing users to join different chat rooms based on their interests or topics.",
@@ -97,6 +98,16 @@ export const projectData: projectDataProps[] = [
             title: "Realtime Database",
             description:
               "Firebase Realtime Database is utilized for storing and synchronizing chat messages in real-time.",
+          },
+        ],
+      },
+      {
+        title: "Last Seen and Online",
+        features: [
+          {
+            title: "Realtime User Status",
+            description:
+              "User last seen and online is visible in realtime with the Time.",
           },
         ],
       },
