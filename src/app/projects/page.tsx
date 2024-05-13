@@ -80,37 +80,54 @@ export default function Projects() {
                     </div>
                   </div>
                   <h5 className="text-sm truncate px-5">{data.technology}</h5>
-                  <div className="flex gap-4 items-center px-5 pb-4">
-                    {data.github && (
-                      <Button
-                        aria-label={`${data.name} Github URL`}
-                        asChild
-                        // className="text-sm flex items-center gap-1"
-                      >
-                        <Link
-                          href={data.github}
+                  <div className="flex gap-4 items-center justify-between px-5 pb-4 mt-10">
+                    <div className="space-x-3">
+                      {data.github && (
+                        <Button
+                          asChild
                           aria-label={`${data.name} Github URL`}
+                          // className="text-sm flex items-center gap-1"
                         >
-                          Github <FaGithub className="ml-2" />
-                        </Link>
-                      </Button>
-                    )}
-                    {data.websiteURL && (
+                          <Link
+                            href={data.github}
+                            aria-label={`${data.name} Github URL`}
+                          >
+                            Github <FaGithub className="ml-2" />
+                          </Link>
+                        </Button>
+                      )}
+                      {data.websiteURL && (
+                        <Button
+                          aria-label={"Website URL"}
+                          variant={"outline"}
+                          asChild
+                          // className="text-sm flex items-center gap-1"
+                        >
+                          <Link
+                            href={data.websiteURL}
+                            className="text-sm flex items-center gap-1"
+                          >
+                            Visit Now <CiGlobe />
+                          </Link>
+                        </Button>
+                      )}
+                    </div>
+                    <div>
                       <Button
-                        aria-label={`${data.name} Website URL`}
-                        variant={"outline"}
+                        aria-label={"Website URL"}
+                        variant={"link"}
                         asChild
                         // className="text-sm flex items-center gap-1"
                       >
                         <Link
-                          aria-label={`${data.name} Website URL`}
-                          href={data.websiteURL}
+                          href={`/projects/${data.id}`}
                           className="text-sm flex items-center gap-1"
                         >
-                          Visit Now <CiGlobe />
+                          Project Info
+                          <PiArrowSquareOutFill className="text-sm flex items-center gap-1" />
                         </Link>
                       </Button>
-                    )}
+                    </div>
                   </div>
                 </div>
               </div>
