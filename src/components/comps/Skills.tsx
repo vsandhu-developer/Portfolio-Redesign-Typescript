@@ -8,7 +8,11 @@ import {
   FaBezierCurve,
   FaPenNib,
 } from "react-icons/fa";
-import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
+import {
+  IoLogoFirebase,
+  IoLogoJavascript,
+  IoLogoNodejs,
+} from "react-icons/io5";
 import { FaFileExcel, FaReact } from "react-icons/fa6";
 import { CiDatabase } from "react-icons/ci";
 import { BiLogoTypescript } from "react-icons/bi";
@@ -18,7 +22,9 @@ import {
   SiAndroidstudio,
   SiAppwrite,
   SiKotlin,
+  SiMongodb,
   SiSquarespace,
+  SiTailwindcss,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { GiWireframeGlobe } from "react-icons/gi";
@@ -65,6 +71,22 @@ export default function Skills() {
       skill: "Firebase",
       icon: <IoLogoFirebase color="#F57C00" />,
       color: "#F57C00",
+    },
+
+    {
+      skill: "Express JS",
+      icon: <IoLogoNodejs color="#3C873A" />,
+      color: "#3C873A",
+    },
+    {
+      skill: "Node JS",
+      icon: <IoLogoNodejs color="#3C873A" />,
+      color: "#3C873A",
+    },
+    {
+      skill: "Tailwind Css",
+      icon: <SiTailwindcss color="#06b6d4" />,
+      color: "#06b6d4",
     },
     {
       skill: "Supabase",
@@ -140,6 +162,11 @@ export default function Skills() {
       skill: "Python",
       icon: <FaPython color="#4584b6" />,
       color: "#4584b6",
+    },
+    {
+      skill: "Mongo DB",
+      icon: <SiMongodb color="#589636" />,
+      color: "#589636",
     },
   ];
   return (
