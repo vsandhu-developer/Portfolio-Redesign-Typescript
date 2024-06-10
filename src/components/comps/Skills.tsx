@@ -23,6 +23,7 @@ import {
   SiAppwrite,
   SiKotlin,
   SiMongodb,
+  SiSanity,
   SiSquarespace,
   SiTailwindcss,
 } from "react-icons/si";
@@ -168,12 +169,17 @@ export default function Skills() {
       icon: <SiMongodb color="#589636" />,
       color: "#589636",
     },
+    {
+      skill: "Sanity",
+      icon: <SiSanity color="#EF3E2E" />,
+      color: "#EF3E2E",
+    },
   ];
   return (
     <div id="skills" className="mb-32">
       <div className="max-w-4xl m-auto mt-32 px-10 lg:px-0">
         <h1 className="text-2xl">Skills</h1>
-        <div className="flex flex-wrap justify-between gap-x-14 pt-12 gap-y-6">
+        <div className="flex flex-wrap justify-start gap-x-14 pt-12 gap-y-6">
           {skills.map(({ skill, icon, color }, index) => {
             const borderColor = `border-[${color}]`;
 
