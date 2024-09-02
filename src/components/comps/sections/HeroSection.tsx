@@ -21,7 +21,7 @@ export default function HeroSection() {
     {
       title: "Linked In",
       icon: <LinkedInLogoIcon color={"white"} width={25} height={25} />,
-      url: "https://www.linkedin.com/in/developer-vinaysandhu/",
+      url: "https://www.linkedin.com/in/vinaypartap-singh/",
     },
   ];
 
