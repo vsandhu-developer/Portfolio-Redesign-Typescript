@@ -43,6 +43,105 @@ type projectDataProps = {
 
 export const projectData: projectDataProps[] = [
   {
+    id: 2,
+    name: "Daily1Blog",
+    image: Daily1BlogImage.src,
+    technology: "React Js Firebase",
+    role: "Full Stack Web Developer",
+    description:
+      "Developed Daily1Blog, a dynamic blogging website using React.js and Firebase. This platform allows users to explore and read a variety of blog posts. With integrated user authentication, logged-in users gain the additional capability to contribute to the platform by uploading their own blog posts.",
+    keyFeatures: [
+      {
+        id: 1,
+        feature: "User Authentication",
+      },
+      {
+        id: 2,
+        feature: "Blog Reading",
+      },
+      {
+        id: 3,
+        feature: "User Contribution",
+      },
+      {
+        id: 4,
+        feature: "Responsive Design",
+      },
+    ],
+    websiteURL: "https://daily1blog.netlify.app/",
+    detailedFeatures: [
+      {
+        title: "User Authentication",
+        features: [
+          {
+            title: "Secure Sign-Up/Login",
+            description:
+              "Users can create accounts securely and log in using Firebase Authentication.",
+          },
+          {
+            title: "Personalized Profiles",
+            description:
+              "Each user has a unique profile with customizable details.",
+          },
+        ],
+      },
+      {
+        title: "Blog Reading",
+        features: [
+          {
+            title: "Explore Posts",
+            description:
+              "Users can browse and read a diverse range of blog posts.",
+          },
+          {
+            title: "Search Functionality",
+            description:
+              "Implemented a search feature for efficient post discovery.",
+          },
+        ],
+      },
+      {
+        title: "User Contribution",
+        features: [
+          {
+            title: "Upload Posts",
+            description:
+              "Authenticated users can contribute to Daily1Blog by uploading their own blog posts.",
+          },
+          {
+            title: "Post Management",
+            description: "Users can edit and delete their uploaded posts.",
+          },
+        ],
+      },
+      {
+        title: "Responsive Design",
+        features: [
+          {
+            title: "Cross-Device Compatibility",
+            description:
+              "Ensured a responsive design for optimal user experience on various devices.",
+          },
+          {
+            title: "Intuitive Navigation",
+            description:
+              "Designed a user-friendly interface for easy navigation and post discovery.",
+          },
+        ],
+      },
+    ],
+    challenges:
+      "Balancing user authentication security with a seamless user experience, implementing a flexible and efficient blog post management system, and optimizing the site for responsive design.",
+    solution:
+      "Leveraged React.js for front-end development and Firebase for user authentication and data storage. Implemented security measures for user authentication and designed a modular and responsive UI for an optimal user experience.",
+    results:
+      "Daily1Blog provides users with a dynamic and secure platform for reading and contributing blog posts. Positive feedback highlights the site's clean design, intuitive navigation, and the seamless integration of user contributions.",
+    learnings:
+      "Enhanced proficiency in full-stack development, improved skills in user authentication, and gained insights into creating a user-friendly blogging platform.",
+    futureImprovements:
+      "Considering future enhancements, such as implementing user comments, social sharing features, and further customization options for user profiles",
+  },
+  {
     id: 14,
     name: "VMChat",
     image: VMCHAT.src,
@@ -362,105 +461,7 @@ export const projectData: projectDataProps[] = [
     futureImprovements:
       "Considering future enhancements, such as expanding communication features, refining the job matching algorithm, and incorporating additional customization options for user profiles.",
   },
-  {
-    id: 2,
-    name: "Daily1Blog",
-    image: Daily1BlogImage.src,
-    technology: "React Js Firebase",
-    role: "Full Stack Web Developer",
-    description:
-      "Developed Daily1Blog, a dynamic blogging website using React.js and Firebase. This platform allows users to explore and read a variety of blog posts. With integrated user authentication, logged-in users gain the additional capability to contribute to the platform by uploading their own blog posts.",
-    keyFeatures: [
-      {
-        id: 1,
-        feature: "User Authentication",
-      },
-      {
-        id: 2,
-        feature: "Blog Reading",
-      },
-      {
-        id: 3,
-        feature: "User Contribution",
-      },
-      {
-        id: 4,
-        feature: "Responsive Design",
-      },
-    ],
-    websiteURL: "https://daily1blog.netlify.app/",
-    detailedFeatures: [
-      {
-        title: "User Authentication",
-        features: [
-          {
-            title: "Secure Sign-Up/Login",
-            description:
-              "Users can create accounts securely and log in using Firebase Authentication.",
-          },
-          {
-            title: "Personalized Profiles",
-            description:
-              "Each user has a unique profile with customizable details.",
-          },
-        ],
-      },
-      {
-        title: "Blog Reading",
-        features: [
-          {
-            title: "Explore Posts",
-            description:
-              "Users can browse and read a diverse range of blog posts.",
-          },
-          {
-            title: "Search Functionality",
-            description:
-              "Implemented a search feature for efficient post discovery.",
-          },
-        ],
-      },
-      {
-        title: "User Contribution",
-        features: [
-          {
-            title: "Upload Posts",
-            description:
-              "Authenticated users can contribute to Daily1Blog by uploading their own blog posts.",
-          },
-          {
-            title: "Post Management",
-            description: "Users can edit and delete their uploaded posts.",
-          },
-        ],
-      },
-      {
-        title: "Responsive Design",
-        features: [
-          {
-            title: "Cross-Device Compatibility",
-            description:
-              "Ensured a responsive design for optimal user experience on various devices.",
-          },
-          {
-            title: "Intuitive Navigation",
-            description:
-              "Designed a user-friendly interface for easy navigation and post discovery.",
-          },
-        ],
-      },
-    ],
-    challenges:
-      "Balancing user authentication security with a seamless user experience, implementing a flexible and efficient blog post management system, and optimizing the site for responsive design.",
-    solution:
-      "Leveraged React.js for front-end development and Firebase for user authentication and data storage. Implemented security measures for user authentication and designed a modular and responsive UI for an optimal user experience.",
-    results:
-      "Daily1Blog provides users with a dynamic and secure platform for reading and contributing blog posts. Positive feedback highlights the site's clean design, intuitive navigation, and the seamless integration of user contributions.",
-    learnings:
-      "Enhanced proficiency in full-stack development, improved skills in user authentication, and gained insights into creating a user-friendly blogging platform.",
-    futureImprovements:
-      "Considering future enhancements, such as implementing user comments, social sharing features, and further customization options for user profiles",
-  },
+
   {
     id: 3,
     name: "Netflix App Clone",
