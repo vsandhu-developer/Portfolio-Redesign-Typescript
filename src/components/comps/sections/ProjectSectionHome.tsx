@@ -38,7 +38,7 @@ export default function ProjectsHome() {
                     height={200}
                   />
                   <div className="flex flex-wrap justify-between items-center px-5">
-                    <h4 className="text-lg tracking-widest my-3">
+                    <h4 className="text-lg tracking-widest my-3 font-bold">
                       {data.name}
                     </h4>
                     <div className="flex gap-2 items-center">
