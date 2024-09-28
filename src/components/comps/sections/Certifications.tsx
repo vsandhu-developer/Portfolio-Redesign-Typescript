@@ -45,7 +45,7 @@ export default function Certifications() {
   ];
   return (
     <div id="skills" className="mb-32">
-      <div className="max-w-4xl m-auto mt-32 lg:px-0">
+      <div className="max-w-4xl m-auto mt-32 px-10 lg:px-0">
         <h1 className="text-2xl font-bold">
           Certifications{" "}
           <span className="text-sm font-normal">Click to view</span>
