@@ -3,6 +3,7 @@ import { FaShopify, FaWordpress } from "react-icons/fa";
 import { FaShop } from "react-icons/fa6";
 import { IoLogoNodejs } from "react-icons/io5";
 import { SiWoocommerce } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 
 interface Certification {
   title: string;
@@ -40,7 +41,13 @@ export default function Certifications() {
       title: "WooCommerce Theme Development",
       driveURL:
         "https://drive.google.com/file/d/1dKTuckm0FxOHuFhmHSFfrt0wUddZr6AN/view?usp=sharing",
-      icon: <FaShop color=" #7F54B3" />,
+      icon: <FaShop color="#7F54B3" />,
+    },
+    {
+      title: "Next JS & WordPress as a Headless CMS",
+      driveURL:
+        "https://drive.google.com/file/d/19zWy6gTjWIEr1B2KHTwhF2y-93Vk9VY6/view?usp=sharing",
+      icon: <TbBrandNextjs color="#000000" />,
     },
   ];
   return (
