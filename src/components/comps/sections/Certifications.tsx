@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaShopify, FaWordpress } from "react-icons/fa";
+import { FaReact, FaShopify, FaWordpress } from "react-icons/fa";
 import { FaShop } from "react-icons/fa6";
 import { IoLogoNodejs } from "react-icons/io5";
 import { SiWoocommerce } from "react-icons/si";
@@ -48,6 +48,12 @@ export default function Certifications() {
       driveURL:
         "https://drive.google.com/file/d/19zWy6gTjWIEr1B2KHTwhF2y-93Vk9VY6/view?usp=sharing",
       icon: <TbBrandNextjs color="#000000" />,
+    },
+    {
+      title: "React Native",
+      driveURL:
+        "https://drive.google.com/file/d/19uk3irf9DERDY0QJnNZh0o5UNcbWvjja/view?usp=sharing",
+      icon: <FaReact color="#61dbfb" />,
     },
   ];
   return (
