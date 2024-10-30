@@ -37,7 +37,7 @@ export default function Projects() {
 
         <div className="w-full my-10">
           <Tabs defaultValue="All Projects" className="w-full">
-            <TabsList className="grid w-full grid-cols-3 bg-gray-100">
+            <TabsList className="grid w-full grid-cols-3 bg-gray-100 dark:bg-gray-900">
               <TabsTrigger value="All Projects">All Projects</TabsTrigger>
               <TabsTrigger value="website">Websites</TabsTrigger>
               <TabsTrigger value="mobile">Mobile Apps</TabsTrigger>
