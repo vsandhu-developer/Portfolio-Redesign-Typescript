@@ -19,7 +19,6 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { FaSwift, FaPython } from "react-icons/fa";
 
 import {
-  SiAndroidstudio,
   SiAppwrite,
   SiKotlin,
   SiMongodb,
