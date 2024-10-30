@@ -21,6 +21,7 @@ type projectDataProps = {
   technology: string;
   role: string;
   description: string;
+  type: "website" | "mobileApp";
   keyFeatures: Array<{
     id: number;
     feature: string;
@@ -50,6 +51,7 @@ export const projectData: projectDataProps[] = [
     role: "Full Stack Web Developer",
     description:
       "Developed Daily1Blog, a dynamic blogging website using React.js and Firebase. This platform allows users to explore and read a variety of blog posts. With integrated user authentication, logged-in users gain the additional capability to contribute to the platform by uploading their own blog posts.",
+    type: "website",
     keyFeatures: [
       {
         id: 1,
@@ -150,6 +152,7 @@ export const projectData: projectDataProps[] = [
     role: "Mobile App Developer",
     description:
       "VMChat is a chat application developed using React Native with Firebase integration. Users can create accounts and engage in chat conversations. The app includes room functionality, allowing users to join different chat rooms based on their interests or topics.",
+    type: "mobileApp",
     keyFeatures: [
       {
         id: 1,
@@ -230,6 +233,7 @@ export const projectData: projectDataProps[] = [
     role: "Full Stack Developer",
     description:
       "Introducing SyncShare, a file sharing website developed using React.js, Node.js, Express.js, MongoDB, and Firebase for authentication. With SyncShare, users can securely upload and share files with anyone, anywhere. The platform offers advanced features such as file protection with passwords, ensuring data privacy and security. The intuitive user interface enhances the sharing experience, making SyncShare a go-to platform for seamless file exchange.",
+    type: "website",
     keyFeatures: [
       {
         id: 1,
@@ -308,6 +312,7 @@ export const projectData: projectDataProps[] = [
     role: "Full Stack Developer",
     description:
       "Presenting Spotify Clone, a music streaming platform developed using Next.js, TypeScript, and Supabase. With Spotify Clone, users can enjoy their favorite music, upload their own songs, and create playlists. The integration with Supabase ensures seamless data management and user authentication. The platform's intuitive design and robust functionality provide users with an immersive music listening experience, making Spotify Clone a top choice for music enthusiasts.",
+    type: "website",
     keyFeatures: [
       {
         id: 1,
@@ -385,6 +390,7 @@ export const projectData: projectDataProps[] = [
     role: "Full Stack Mobile App Developer",
     description:
       "Developed a comprehensive JobFinder application using React Native and Firebase. This app facilitates job posting for recruiters and job applications for freelancers. Both recruiters and freelancers have dedicated profile pages, and freelancers can upload their resumes while creating their profiles.",
+    type: "mobileApp",
     keyFeatures: [
       {
         id: 1,
@@ -468,7 +474,7 @@ export const projectData: projectDataProps[] = [
     image: NetflixImage.src,
     technology: "React Native & Firebase",
     role: "Full Stack Development",
-
+    type: "mobileApp",
     description:
       "Developed a Netflix clone mobile application using React Native and Firebase.\n" +
       "Features dynamic fetching of movie data from a third-party API to create a realistic and engaging streaming experience.\n" +
@@ -540,6 +546,7 @@ export const projectData: projectDataProps[] = [
     role: "Front-end Web Developer",
     description:
       "Built Spartx Dev, a robust e-commerce website from the ground up, utilizing Shopify Liquid for dynamic content and templating. This project seamlessly integrates HTML, CSS, and JavaScript to create a visually appealing and user-friendly online shopping experience.",
+    type: "website",
     keyFeatures: [
       {
         id: 1,
@@ -641,6 +648,7 @@ export const projectData: projectDataProps[] = [
     role: "Full Stack Mobile Developer",
     description:
       "Developed LaundryPal, a cutting-edge laundry application using React Native and Firebase. The app seamlessly integrates features such as user profiles, order history, date picking for delivery, and automatic location detection. LaundryPal offers users a convenient and efficient way to manage their laundry needs with a user-friendly interface.",
+    type: "mobileApp",
     keyFeatures: [
       {
         id: 1,
@@ -742,6 +750,7 @@ export const projectData: projectDataProps[] = [
     role: "Full-Stack Mobile Developer",
     description:
       "Developed CloudMedia Vault, a secure mobile application built with React Native and Firebase. The app provides users with a platform to securely store images and videos on the cloud, ensuring data privacy. It incorporates robust authentication features to guarantee a secure user experience.",
+    type: "mobileApp",
     keyFeatures: [
       {
         id: 1,
@@ -840,6 +849,7 @@ export const projectData: projectDataProps[] = [
     role: "Full-stack Mobile Developer",
     description:
       "Developed Threads Clone, a robust social media application using React Native and Firebase. This mobile app empowers users to create accounts, connect by following each other, upload posts, and manage personalized profile pages. Threads Clone provides a seamless and engaging platform for social interactions on the go.",
+    type: "mobileApp",
     keyFeatures: [
       {
         id: 1,
@@ -941,6 +951,7 @@ export const projectData: projectDataProps[] = [
     role: "Full-stack Mobile Developer",
     description:
       "Created StayEasy, an intuitive hotel booking application using React Native and Firebase. This mobile app streamlines the hotel reservation process, offering users authentication features, the ability to bookmark favorite places, and a convenient booking system for planning their stays.",
+    type: "mobileApp",
     keyFeatures: [
       {
         id: 1,
@@ -1041,6 +1052,7 @@ export const projectData: projectDataProps[] = [
     role: "Front-end Developer",
     description:
       "Designed BubblePop, a captivating web game using HTML, CSS, and JavaScript, introducing an innovative bubble event concept for dynamic interactivity. The game offers users an engaging bubble-popping experience with responsive design. Positive user feedback and increased interaction highlight its success. Future plans involve expanding the game with additional levels and social features for a more enriched gaming community.",
+    type: "website",
     keyFeatures: [
       {
         id: 1,
@@ -1105,6 +1117,7 @@ export const projectData: projectDataProps[] = [
     role: "Full Stack Developer",
     description:
       "Introducing Zomato Clone, a React.js and Firebase-powered Zomato clone that seamlessly blends user authentication with dynamic data filtering on the product page. This user-friendly platform delivers a personalized dining experience, showcasing my skills in full-stack development. Positive user engagement underscores the success of this project, with future plans to enhance features such as order tracking and social sharing for an elevated dining journey.",
+    type: "website",
     keyFeatures: [
       {
         id: 1,

@@ -172,7 +172,7 @@ export default function page() {
     <div>
       <div className="max-w-5xl m-auto lg:px-0 px-10">
         <div className="py-24 space-y-6">
-          <h1 className="text-red-600 text-4xl font-semibold uppercase">
+          <h1 className="text-red-500 text-4xl font-semibold uppercase">
             Resume
           </h1>
           <h2 className="text-4xl tracking-wider">
@@ -187,7 +187,7 @@ export default function page() {
             Shopify, WordPress, HTML, CSS, Javascript, React JS, React Native,
             and more.
           </p>
-          <button className="border-2 py-3 px-8 rounded-md border-red-600 text-red-600 hover:bg-red-600 hover:text-white transition-all mt-5">
+          <button className="border-2 py-2 px-8 rounded-md dark:bg-red-500 dark:text-white border-red-500 text-red-500 hover:bg-red-500 hover:text-white transition-all mt-5">
             <a
               target="_blank"
               href="https://drive.google.com/file/d/1vXiQ64bsy40LD5mkzylpFe2cgMTBgAk9/view?usp=sharing"
@@ -195,7 +195,7 @@ export default function page() {
               View Resume
             </a>
           </button>
-          <p className="text-red-600 font-light tracking-widest">
+          <p className="text-red-500 font-light tracking-widest">
             PDF | Preview Available | 342 KB | 1 Page
           </p>
         </div>
@@ -205,8 +205,8 @@ export default function page() {
         <div className="space-y-4 lg:w-full md:w-4/5 md:m-auto ">
           <h1 className="text-4xl font-bold ">Vinaypartap Singh</h1>
           <p className="text-xl tracking-wider">
-            A <span className="text-red-600">web developer</span> passionate for
-            new challanges and technologies.
+            <span className="text-red-500 font-bold">web developer</span>{" "}
+            passionate for new challanges and technologies.
             <br /> changing the world one pixel at a time.
           </p>
           {/* Sections */}
