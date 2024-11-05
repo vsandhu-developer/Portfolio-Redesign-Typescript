@@ -10,28 +10,36 @@ import { Button } from "../ui/button";
 import { TextAlignRightIcon } from "@radix-ui/react-icons";
 import { DarkModeToggle } from "./Toggle";
 import MenuDrawer from "./MenuDrawer";
+import BottomNavigation from "./BottomNavigation";
+import React from "react";
+import { BookOpenText, Code, HomeIcon, NotebookPen } from "lucide-react";
 
 interface navItemsType {
   title: string;
   url: string;
+  icon?: React.ReactNode;
 }
 
 export const navItems: navItemsType[] = [
   {
     title: "Home",
     url: "/",
+    icon: <HomeIcon className="h-4 w-4" />,
   },
   {
     title: "Resume",
     url: "/resume",
+    icon: <BookOpenText className="h-4 w-4" />,
   },
   {
     title: "Projects",
     url: "/projects",
+    icon: <Code className="h-4 w-4" />,
   },
   {
     title: "Blogs",
     url: "/blogs",
+    icon: <NotebookPen className="h-4 w-4" />,
   },
 ];
 
@@ -59,7 +67,8 @@ export default function Header() {
       </div>
       <div className="md:hidden flex items-center gap-x-4">
         <DarkModeToggle />
-        <MenuDrawer />
+        {/* <MenuDrawer /> */}
+        <BottomNavigation />
       </div>
     </div>
   );
