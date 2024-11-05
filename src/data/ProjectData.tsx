@@ -11,6 +11,7 @@ import JobFinderAppImage from "@/assets/mockups/JobFinderApp.png";
 import SyncShareImage from "@/assets/mockups/SyncShare.png";
 import SpotifyCloneImage from "@/assets/mockups/SpotifyClone.png";
 import VMCHAT from "@/assets/mockups/VmChatApplication.png";
+import MIHUIMAGE from "@/assets/mockups/Shopping.png";
 
 // Image Check
 
@@ -21,7 +22,7 @@ type projectDataProps = {
   technology: string;
   role: string;
   description: string;
-  type: "website" | "mobileApp";
+  type: "website" | "mobileApp" | "backend";
   keyFeatures: Array<{
     id: number;
     feature: string;
@@ -1172,5 +1173,58 @@ export const projectData: projectDataProps[] = [
       "Gained expertise in integrating Firebase services for user authentication and real-time data management, contributing to improved full-stack development skills.",
     futureImprovements:
       "Planning to expand features, including order tracking and social sharing options, to elevate the user dining experience.",
+  },
+  {
+    id: 12098,
+    name: "MIHU Backend",
+    image: MIHUIMAGE.src,
+    technology: "Node.js, Express.js, MongoDB, JWT",
+    role: "Backend Developer",
+    description:
+      "Backend for MIHU focusing on secure authentication with OTP verification and user profile customization.",
+    type: "backend",
+    keyFeatures: [
+      { id: 1, feature: "Authentication" },
+      { id: 2, feature: "Email OTP Verification" },
+      { id: 3, feature: "Navigation Management" },
+      { id: 4, feature: "Social Media Links" },
+      { id: 5, feature: "Logo Upload" },
+    ],
+    detailedFeatures: [
+      {
+        title: "Authentication Module",
+        features: [
+          {
+            title: "Email OTP",
+            description:
+              "Verification via OTP sent to user’s email for secure access.",
+          },
+        ],
+      },
+      {
+        title: "Profile Management",
+        features: [
+          {
+            title: "Custom Social Links",
+            description: "Add and manage social media links for branding.",
+          },
+          {
+            title: "Logo Upload",
+            description: "Upload a custom logo for user profiles.",
+          },
+        ],
+      },
+    ],
+    challenges:
+      "Ensuring that OTPs (One-Time Passwords) are both generated and verified securely. This includes generating unique OTPs, setting expiration times, and preventing reuse to minimize security risks. Additionally, the challenge includes handling situations where users may request multiple OTPs in a short timeframe.Allowing users to update and manage their social media links in real-time without impacting performance or requiring additional backend intervention. This involves designing a flexible data structure and implementing efficient update methods to handle user-specific link management.",
+    solution:
+      "Leveraging Node.js provides a scalable environment for handling authentication processes and user management efficiently. Node.js is ideal for real-time applications, enabling quick data handling and responsive API services.MongoDB's document-oriented structure supports dynamic data needs, such as user-specific fields for social media links and branding information. MongoDB’s schema-less nature also allows for flexible modifications as the project grows.",
+    results:
+      "With secure OTP validation, users benefit from a safer, two-factor authentication experience that helps protect against unauthorized access.Users can personalize their profiles by adding logos and social media links, creating a unique and professional online presence.",
+    learnings:
+      "Working through the OTP verification process improved knowledge of secure authentication flows and error handling.Gained insights into securing user data, especially in the context of link updates and personal branding data, as well as managing expiration for time-sensitive tokens.",
+    futureImprovements:
+      "Adding a customizable hero section and additional branding sections will allow users to create a more engaging experience. This feature would include options for uploading custom backgrounds, headings, and descriptions for a personalized touch.Including more layout control for sections like About, Testimonials, or Services would empower users to build a profile page more aligned with their brand.",
+    github: "https://github.com/Vinaypartap-Singh/MIHU_BACKEND",
   },
 ];

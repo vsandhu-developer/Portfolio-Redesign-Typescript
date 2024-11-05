@@ -114,3 +114,7 @@
   border: 1px solid #e2e8f0;
   border-radius: 7px;
 }
+
+li {
+  list-style: lower-roman !important;
+}
