@@ -35,7 +35,7 @@ export default function HeroSection() {
             height={92}
             quality={95}
             alt="Vinaypartap Singh Image"
-            className="rounded-full border-8 border-white mainImage bg-red-20"
+            className="rounded-full border-8 border-gray-100 mainImage bg-red-20"
           />
           <span className="absolute bottom-[-10px] left-10 text-2xl">👋</span>
         </div>
