@@ -49,7 +49,13 @@ export default function HeroSection() {
         </p>
 
         <p className={"text-gray-600 text-center dark:text-white"}>
-          This portfolio is built using Next JS 14, Tailwind CSS and Typescript.
+          I specialize in building full-stack applications using modern
+          technologies like{" "}
+          <span className="font-semibold">
+            {" "}
+            Next.js, React Native, Express.js, Node.js, Prisma, PostgreSQL, and
+            MongoDB.
+          </span>
         </p>
 
         {/* Buttons */}

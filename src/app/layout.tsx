@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Jost } from "next/font/google";
+import { Jost, Outfit } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/comps/Header";
 import NextTopLoader from "nextjs-toploader";
 import Footer from "@/components/comps/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
-const inter = Jost({
+const inter = Outfit({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });

@@ -127,20 +127,37 @@ export default function page() {
 
   const Coding: Skills[] = [
     {
-      skill: "Html, Css",
-    },
-
-    {
-      skill: "Javascript",
+      skill: "Html, Css, Javscript",
     },
     {
       skill: "React JS",
     },
     {
-      skill: "React Native",
+      skill: "Next JS",
     },
     {
-      skill: "Firebase",
+      skill: "React Native",
+    },
+  ];
+
+  const Backend: Skills[] = [
+    {
+      skill: "Node JS",
+    },
+    {
+      skill: "Express JS",
+    },
+    {
+      skill: "MongoDB",
+    },
+    {
+      skill: "Postgresql",
+    },
+    {
+      skill: "Redis",
+    },
+    {
+      skill: "Prisma",
     },
   ];
 
@@ -203,7 +220,7 @@ export default function page() {
         {/* Resume Section */}
 
         <div className="space-y-4 lg:w-full md:w-4/5 md:m-auto ">
-          <h1 className="text-4xl font-bold ">Vinaypartap Singh</h1>
+          <h1 className="text-4xl">Vinaypartap Singh</h1>
           <p className="text-xl tracking-wider">
             <span className="text-red-500 font-bold">web developer</span>{" "}
             passionate for new challanges and technologies.
@@ -336,6 +353,15 @@ export default function page() {
             </div>
           </div>
           <div>
+            <h5 className="font-bold">Backend</h5>
+            <div className="space-y-1 mt-2">
+              {Backend.map(({ skill }, index) => {
+                return <p key={index}>{skill}</p>;
+              })}
+            </div>
+          </div>
+
+          <div>
             <h5 className="font-bold">CMS</h5>
             <div className="space-y-1 mt-2">
               {CMS.map(({ tool }, index) => {
@@ -343,6 +369,7 @@ export default function page() {
               })}
             </div>
           </div>
+
           <div>
             <h5 className="font-bold">Others</h5>
             <div className="space-y-1 mt-2">
