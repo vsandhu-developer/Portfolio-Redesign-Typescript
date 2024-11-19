@@ -13,12 +13,12 @@ export default function ProjectsHome() {
       <div className="min-h-screen pt-10 mt-32 max-w-4xl m-auto">
         <div className="px-10 lg:px-0">
           <h1 className="text-2xl">Picked Projects</h1>
-          <p className="mt-5 leading-8">
+          {/* <p className="mt-5 leading-8">
             I have worked on various projects and had the opportunity to explore
             new technologies, while trying to solve new problems. This
             experience has been great and has helped me improve myself on a
             daily basis.
-          </p>
+          </p> */}
         </div>
 
         <div className="mt-10 px-5 grid gap-y-4 gap-x-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 bg-red-50 bg-transparent">
