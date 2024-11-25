@@ -45,7 +45,7 @@ export const navItems: navItemsType[] = [
 
 export default function Header() {
   return (
-    <div className="flex justify-between items-center py-6 w-full h-[90px] px-10">
+    <header className="flex justify-between items-center py-6 w-full h-[90px] sticky top-0 px-10 bg-white/60 backdrop-blur-md z-10">
       <h2 className="font-bold text-lg">Vinaypartap Singh</h2>
       <div className="hidden md:flex space-x-10 items-center">
         <ul className="flex space-x-10">
@@ -70,6 +70,6 @@ export default function Header() {
         {/* <MenuDrawer /> */}
         <BottomNavigation />
       </div>
-    </div>
+    </header>
   );
 }

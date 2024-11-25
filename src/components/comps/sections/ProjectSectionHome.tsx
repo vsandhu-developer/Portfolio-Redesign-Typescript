@@ -6,6 +6,7 @@ import { PiArrowSquareOutFill } from "react-icons/pi";
 import { projectData } from "@/data/ProjectData";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { Card } from "@/components/ui/card";
 
 export default function ProjectsHome() {
   return (
@@ -24,9 +25,9 @@ export default function ProjectsHome() {
         <div className="mt-10 px-5 grid gap-y-4 gap-x-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 bg-red-50 bg-transparent">
           {projectData.map((data, index) => {
             return (
-              <div
+              <Card
                 key={index}
-                className={`cursor-pointer shadow-md hover:shadow-xl h-fit text-3xl flex flex-col justify-center items-center transition-all rounded-md my-6 projectDataSection`}
+                className={`cursor-pointer h-fit text-3xl flex flex-col justify-center items-center transition-all rounded-md my-6 projectDataSection`}
               >
                 <div className="bg-white dark:bg-black w-full h-full rounded-md space-y-2">
                   <Image
@@ -121,7 +122,7 @@ export default function ProjectsHome() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </Card>
             );
           })}
         </div>
