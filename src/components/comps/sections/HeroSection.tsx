@@ -26,7 +26,7 @@ export default function HeroSection() {
   ];
 
   return (
-    <div className="max-w-7xl m-auto min-h-[75vh] flex items-center px-10">
+    <div className="max-w-7xl m-auto mt-40 flex items-center px-10">
       <div className="flex justify-center flex-col items-center space-y-10">
         <div className="relative">
           <Image

@@ -46,7 +46,7 @@ export const navItems: navItemsType[] = [
 export default function Header() {
   return (
     <header className="flex justify-between items-center py-6 w-full h-[90px] sticky top-0 px-10 bg-white/60 backdrop-blur-md z-10">
-      <h2 className="font-bold text-lg">Vinaypartap Singh</h2>
+      <h2 className="hidden md:flex font-bold text-lg">Vinaypartap Singh</h2>
       <div className="hidden md:flex space-x-10 items-center">
         <ul className="flex space-x-10">
           {navItems.map(({ title, url }, index) => {
@@ -65,9 +65,12 @@ export default function Header() {
         </Button>
         <DarkModeToggle />
       </div>
-      <div className="md:hidden flex items-center gap-x-4">
+      <div className="hidden md:flex items-center gap-x-4">
         <DarkModeToggle />
         {/* <MenuDrawer /> */}
+      </div>
+
+      <div className="md:hidden flex items-center gap-x-4">
         <BottomNavigation />
       </div>
     </header>
