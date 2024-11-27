@@ -65,13 +65,12 @@ export default function Header() {
         </Button>
         <DarkModeToggle />
       </div>
-      <div className="hidden md:flex items-center gap-x-4">
-        <DarkModeToggle />
-        {/* <MenuDrawer /> */}
-      </div>
-
       <div className="md:hidden flex items-center gap-x-4">
-        <BottomNavigation />
+        <DarkModeToggle />
+        <MenuDrawer />
+        <div>
+          <BottomNavigation />
+        </div>
       </div>
     </header>
   );
