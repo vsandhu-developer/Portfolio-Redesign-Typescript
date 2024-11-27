@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { navItems } from "./Header";
-import { HomeIcon } from "lucide-react";
 
 export default function BottomNavigation() {
   return (

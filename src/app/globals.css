@@ -36,33 +36,33 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 0%; /* Pure black background */
+    --foreground: 0 0% 100%; /* Pure white foreground for maximum contrast */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 0%; /* Pure black for cards */
+    --card-foreground: 0 0% 100%; /* Pure white text on cards */
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 0%; /* Pure black for popovers */
+    --popover-foreground: 0 0% 100%; /* Pure white text for popovers */
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 0 0% 100%; /* Pure white primary elements */
+    --primary-foreground: 0 0% 0%; /* Black foreground on primary elements */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 0 0% 15%; /* Dark gray (slightly above black) for secondary elements */
+    --secondary-foreground: 0 0% 100%; /* Pure white text for secondary elements */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 0 0% 10%; /* Very dark gray for muted elements */
+    --muted-foreground: 0 0% 60%; /* Medium gray for muted text */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 0 0% 15%; /* Dark gray for accent elements */
+    --accent-foreground: 0 0% 100%; /* Pure white text for accent elements */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 50% 40%; /* Bright red for destructive actions */
+    --destructive-foreground: 0 0% 100%; /* Pure white text for destructive actions */
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 0 0% 20%; /* Dark gray for borders */
+    --input: 0 0% 10%; /* Very dark gray for input fields */
+    --ring: 0 0% 40%; /* Medium gray for focus rings or outlines */
   }
 }
 

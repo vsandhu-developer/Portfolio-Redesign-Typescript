@@ -12,11 +12,21 @@ const inter = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.vinaypartap.netlify.com"),
   title: "Vinaypartap Singh",
   description:
     "- Web Developer | React.js, Node.js, MongoDB, Firebase, React Native, Shopify Liquid (Theme Development), WordPress, Elementor, Google Sites |",
   keywords:
     "React Native, Laundry App, Job Finder, Image Upload, Video Upload, YouTube UI Clone, Daily1Blog, Blog Website, Full Stack Development. Full Stack Developer, Front-End Developer, Back-End Developer, Firebase, React JS, Next JS.",
+  openGraph: {
+    title: "Vinaypartap Singh - Web Developer Portfolio",
+    description:
+      "Explore the portfolio of Vinaypartap Singh, a versatile web developer skilled in React.js, Node.js, MongoDB, Firebase, React Native, Shopify, WordPress, and more.",
+    url: "https://www.vinaypartap.netlify.com",
+    type: "website",
+    locale: "en_US",
+    siteName: "Vinaypartap Singh Portfolio",
+  },
 };
 
 export default function RootLayout({

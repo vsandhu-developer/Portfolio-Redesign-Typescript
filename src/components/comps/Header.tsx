@@ -1,15 +1,5 @@
-import {
-  Menubar,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarTrigger,
-} from "@/components/ui/menubar";
 import Link from "next/link";
 import { Button } from "../ui/button";
-import { TextAlignRightIcon } from "@radix-ui/react-icons";
-import { DarkModeToggle } from "./Toggle";
-import MenuDrawer from "./MenuDrawer";
 import BottomNavigation from "./BottomNavigation";
 import React from "react";
 import { BookOpenText, Code, HomeIcon, NotebookPen } from "lucide-react";
@@ -45,7 +35,7 @@ export const navItems: navItemsType[] = [
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center py-6 w-full h-[90px] sticky top-0 px-10 bg-white/60 backdrop-blur-md z-10">
+    <header className="flex justify-between items-center py-6 w-full h-[90px] sticky top-0 px-10 bg-white/60 dark:bg-gray-900/60 backdrop-blur-md z-10">
       <h2 className="hidden md:flex font-bold text-lg">Vinaypartap Singh</h2>
       <div className="hidden md:flex space-x-10 items-center">
         <ul className="flex space-x-10">
@@ -63,11 +53,8 @@ export default function Header() {
         <Button asChild>
           <Link href={"/contact"}>Contact Me</Link>
         </Button>
-        <DarkModeToggle />
       </div>
       <div className="md:hidden flex items-center gap-x-4">
-        <DarkModeToggle />
-        <MenuDrawer />
         <div>
           <BottomNavigation />
         </div>

@@ -181,11 +181,10 @@ export default function Skills() {
         <div className="flex flex-wrap justify-start gap-x-14 pt-12 gap-y-6">
           {skills.map(({ skill, icon, color }, index) => {
             const borderColor = `border-[${color}]`;
-
             return (
               <div
                 key={index}
-                className={`flex items-center underline hover:cursor-pointer hover:text-black text-black/50 font-medium`}
+                className={`flex items-center underline hover:cursor-pointer hover:text-black text-black/50 font-medium dark:text-white`}
               >
                 {/* {icon}  */}
                 {skill}
