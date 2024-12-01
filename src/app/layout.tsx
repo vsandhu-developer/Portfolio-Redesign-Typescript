@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Jost, Outfit } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/comps/Header";
 import NextTopLoader from "nextjs-toploader";
 import Footer from "@/components/comps/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
-const inter = Outfit({
+const inter = Nunito({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
