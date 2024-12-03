@@ -72,9 +72,9 @@ export default function Certifications() {
                 target="_blank"
                 href={driveURL}
                 key={index}
-                className={`flex items-center underline hover:cursor-pointer hover:text-black text-black/50 font-medium dark:text-white`}
+                className={`flex items-center underline hover:cursor-pointer hover:text-black text-black/50 font-medium dark:text-white gap-2`}
               >
-                {/* {icon} */}
+                {icon}
                 {title} <GoLinkExternal className="size-3 ml-1" />
               </Link>
             );

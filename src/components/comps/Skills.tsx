@@ -184,9 +184,9 @@ export default function Skills() {
             return (
               <div
                 key={index}
-                className={`flex items-center underline hover:cursor-pointer hover:text-black text-black/50 font-medium dark:text-white`}
+                className={`flex items-center underline hover:cursor-pointer hover:text-black text-black/50 font-medium dark:text-white gap-2`}
               >
-                {/* {icon}  */}
+                {icon}
                 {skill}
               </div>
             );
