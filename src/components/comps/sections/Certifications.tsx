@@ -28,6 +28,12 @@ export default function Certifications() {
       icon: <FaShopify color="#95BF47" />,
     },
     {
+      title: "Shopify Theme Development 3.0",
+      driveURL:
+        "https://drive.google.com/file/d/12wCIqSxwI4IsVqPTp7leBJpQ6XaU7AA_/view?usp=sharing",
+      icon: <FaShopify color="#95BF47" />,
+    },
+    {
       title: "Mern Stack",
       driveURL:
         "https://drive.google.com/file/d/1CX2dMJLCKuCoF849_yf1wrzWtARl1ZxN/view?usp=sharing",
@@ -72,7 +78,7 @@ export default function Certifications() {
                 target="_blank"
                 href={driveURL}
                 key={index}
-                className={`flex items-center underline hover:cursor-pointer hover:text-black text-black/50 font-medium dark:text-white gap-2`}
+                className={`flex items-center underline hover:cursor-pointer hover:text-black text-black/90 font-medium dark:text-white gap-2`}
               >
                 {icon}
                 {title} <GoLinkExternal className="size-3 ml-1" />
