@@ -12,7 +12,10 @@ import SyncShareImage from "@/assets/mockups/SyncShare.png";
 import SpotifyCloneImage from "@/assets/mockups/SpotifyClone.png";
 import VMCHAT from "@/assets/mockups/VmChatApplication.png";
 import MIHUIMAGE from "@/assets/mockups/Shopping.png";
-
+import THOUGHTWAVEIMAGE from "@/assets/mockups/Thoughtwave.png";
+import GOOGLEDOCSIMAGE from "@/assets/mockups/GoogleDocs.png";
+import SWIFTUISPOTIFYCLONEIMAGE from "@/assets/mockups/SpotifyUISwift.png";
+import THREADSUISWIFTUICLONE from "@/assets/mockups/ThreadsUIIOS.png";
 // Image Check
 
 type projectDataProps = {
@@ -22,7 +25,7 @@ type projectDataProps = {
   technology: string;
   role: string;
   description: string;
-  type: "website" | "mobileApp" | "backend";
+  type: "website" | "mobileApp" | "backend" | "swiftUI";
   keyFeatures: Array<{
     id: number;
     feature: string;
@@ -143,6 +146,541 @@ export const projectData: projectDataProps[] = [
       "Enhanced proficiency in full-stack development, improved skills in user authentication, and gained insights into creating a user-friendly blogging platform.",
     futureImprovements:
       "Considering future enhancements, such as implementing user comments, social sharing features, and further customization options for user profiles",
+  },
+  {
+    id: 2025,
+    name: "Thoughtwave",
+    image: THOUGHTWAVEIMAGE.src,
+    technology: "Next.js, TypeScript, Firebase, Tailwind CSS, MongoDB",
+    role: "Full Stack Developer",
+    description:
+      "Thoughtwave is a dynamic social media platform built using Next.js, TypeScript, and Firebase. It offers users an Instagram-like feed, robust search functionality, and advanced features like following/unfollowing users, private/public profile settings, and separate pages for followers and followings. Designed to foster community and engagement, Thoughtwave delivers an intuitive and seamless social media experience.",
+    type: "website",
+    keyFeatures: [
+      {
+        id: 1,
+        feature: "User Authentication and Profiles",
+      },
+      {
+        id: 2,
+        feature: "Feed with Posts, Comments, and Likes",
+      },
+      {
+        id: 3,
+        feature: "Follow/Unfollow and Search Functionality",
+      },
+    ],
+    github: "https://github.com/Vinaypartap-Singh/Thought-Wave",
+    websiteURL: "https://thought-wave-vinay.vercel.app/",
+    detailedFeatures: [
+      {
+        title: "User Authentication and Profiles",
+        features: [
+          {
+            title: "Authentication",
+            description: "Supports secure login and registration for users.",
+          },
+          {
+            title: "Public/Private Profiles",
+            description:
+              "Allows users to toggle their profile visibility as public or private.",
+          },
+        ],
+      },
+      {
+        title: "Feed with Posts, Comments, and Likes",
+        features: [
+          {
+            title: "Instagram-like Feed",
+            description:
+              "Displays a real-time feed of posts from followed users and public profiles.",
+          },
+          {
+            title: "Engagement Features",
+            description: "Supports liking, commenting, and sharing posts.",
+          },
+        ],
+      },
+      {
+        title: "Follow/Unfollow and Search Functionality",
+        features: [
+          {
+            title: "Search Users",
+            description: "Enables users to search for other users by username.",
+          },
+          {
+            title: "Follow/Unfollow",
+            description:
+              "Allows users to follow or unfollow other users seamlessly.",
+          },
+          {
+            title: "Followers/Followings Pages",
+            description:
+              "Provides separate pages for users to view their followers and followings.",
+          },
+        ],
+      },
+    ],
+    challenges:
+      "Implementing real-time updates for the feed and managing private/public profile settings.",
+    solution:
+      "Utilized Firebase for real-time database functionality and authentication. Leveraged Next.js for server-side rendering and MongoDB for efficient data storage. Tailwind CSS was used for creating a responsive and user-friendly UI.",
+    results:
+      "Successfully launched Thoughtwave, a fully functional social media platform, enhancing user engagement and providing a seamless user experience.",
+    learnings:
+      "Gained expertise in building scalable social media platforms, real-time data synchronization, and user privacy controls.",
+    futureImprovements:
+      "Planning to add features like stories, notifications, and AI-based content recommendations to enhance user engagement and retention.",
+  },
+  {
+    id: 2024,
+    name: "Google Docs Clone",
+    image: GOOGLEDOCSIMAGE.src,
+    technology: "React.js, Firebase, Tailwind CSS, Quill.js",
+    role: "Full Stack Developer",
+    description:
+      "Google Docs Clone is a collaborative document creation and editing platform built using React.js and Firebase. It allows users to create an account, manage their documents, and edit them in real-time with an intuitive interface. The app offers seamless data synchronization, ensuring that user changes are saved instantly.",
+    type: "website",
+    keyFeatures: [
+      {
+        id: 1,
+        feature: "User Authentication",
+      },
+      {
+        id: 2,
+        feature: "Real-time Document Editing",
+      },
+      {
+        id: 3,
+        feature: "Document Management",
+      },
+    ],
+    github: "https://github.com/Vinaypartap-Singh/docs-nextjs-api-prisma",
+    websiteURL: "https://docs-nextjs-vinay.vercel.app/document",
+    detailedFeatures: [
+      {
+        title: "User Authentication",
+        features: [
+          {
+            title: "Secure Login and Registration",
+            description: "Provides secure authentication using Firebase.",
+          },
+          {
+            title: "Account Management",
+            description:
+              "Allows users to manage their account details and view their documents.",
+          },
+        ],
+      },
+      {
+        title: "Real-time Document Editing",
+        features: [
+          {
+            title: "Rich Text Editor",
+            description:
+              "Enables users to edit documents with formatting options using Quill.js.",
+          },
+          {
+            title: "Auto-save",
+            description:
+              "Ensures that all changes are automatically saved in real-time.",
+          },
+        ],
+      },
+      {
+        title: "Document Management",
+        features: [
+          {
+            title: "Create and Manage Documents",
+            description:
+              "Allows users to create new documents, rename them, and manage existing ones.",
+          },
+          {
+            title: "Collaborative Editing (Future Feature)",
+            description:
+              "Plans to enable multiple users to edit a document simultaneously.",
+          },
+        ],
+      },
+    ],
+    challenges:
+      "Implementing real-time synchronization and creating a rich text editor with advanced formatting options.",
+    solution:
+      "Used Firebase Firestore for real-time database synchronization and Quill.js for an easy-to-use text editor. Tailwind CSS was employed to create a modern and responsive UI.",
+    results:
+      "Successfully developed a functional Google Docs Clone with real-time editing and robust document management capabilities, providing users with a simplified document creation experience.",
+    learnings:
+      "Improved skills in implementing real-time features and building user-friendly interfaces for document management applications.",
+    futureImprovements:
+      "Planning to add collaborative editing, version history, and integration with cloud storage services for enhanced functionality.",
+  },
+  {
+    id: 20242,
+    name: "Spotify UI Clone",
+    image: SWIFTUISPOTIFYCLONEIMAGE.src,
+    technology: "SwiftUI, Xcode",
+    role: "iOS Developer",
+    description:
+      "Spotify UI Clone is an iOS application replicating the popular Spotify app's user interface. Built using SwiftUI, it includes Home, Search, and Library pages designed with attention to detail for an immersive user experience. The app demonstrates the capabilities of SwiftUI in crafting responsive and visually appealing UIs.",
+    type: "swiftUI",
+    keyFeatures: [
+      {
+        id: 1,
+        feature: "Home Page UI",
+      },
+      {
+        id: 2,
+        feature: "Search Page UI",
+      },
+      {
+        id: 3,
+        feature: "Library Page UI",
+      },
+    ],
+    github: "https://github.com/Vinaypartap-Singh/Spotify-Ui-SwiftUI-Clone",
+    detailedFeatures: [
+      {
+        title: "Home Page UI",
+        features: [
+          {
+            title: "Curated Content Layout",
+            description:
+              "Displays playlists, albums, and recently played items in a responsive grid layout.",
+          },
+          {
+            title: "Dynamic Content Display",
+            description:
+              "Uses mock data to populate content similar to the original Spotify app.",
+          },
+        ],
+      },
+      {
+        title: "Search Page UI",
+        features: [
+          {
+            title: "Search Bar",
+            description:
+              "Includes a functional search bar for users to explore content.",
+          },
+          {
+            title: "Category Grid",
+            description:
+              "Presents categories like Podcasts, Charts, and Genres with modern card designs.",
+          },
+        ],
+      },
+      {
+        title: "Library Page UI",
+        features: [
+          {
+            title: "User Library",
+            description:
+              "Displays user-specific playlists and saved music in a sleek and organized view.",
+          },
+          {
+            title: "Responsive UI",
+            description:
+              "Adapts to different screen sizes for an optimized viewing experience.",
+          },
+        ],
+      },
+    ],
+    challenges:
+      "Recreating Spotify's intricate UI elements while ensuring responsiveness across iOS devices.",
+    solution:
+      "Leveraged SwiftUI's declarative syntax to build a clean and reusable component-based architecture. Focused on alignment, spacing, and responsiveness for pixel-perfect designs.",
+    results:
+      "Successfully delivered a visually stunning and highly responsive UI clone of Spotify's core pages, showcasing SwiftUI's flexibility and power.",
+    learnings:
+      "Enhanced proficiency in SwiftUI for designing complex UIs and gained valuable insights into building scalable UI architectures.",
+    futureImprovements:
+      "Planning to add functionality for user interaction, real-time data integration, and dark/light mode support to enrich the application further.",
+  },
+  {
+    id: 20243,
+    name: "Threads UI Clone",
+    image: THREADSUISWIFTUICLONE.src,
+    technology: "SwiftUI, Xcode",
+    role: "iOS Developer",
+    description:
+      "Threads UI Clone is an iOS application that replicates the user interface of the Threads app by Instagram. Built entirely in SwiftUI, the project includes Home, Profile, and Search pages, designed with precision to reflect the minimalist and engaging design of the original app. It serves as a showcase of SwiftUI's capabilities in developing modern and interactive user interfaces.",
+    type: "swiftUI",
+    keyFeatures: [
+      {
+        id: 1,
+        feature: "Home Page UI",
+      },
+      {
+        id: 2,
+        feature: "Profile Page UI",
+      },
+      {
+        id: 3,
+        feature: "Search Page UI",
+      },
+    ],
+    github: "https://github.com/YourUsername/Threads-UI-Clone",
+    detailedFeatures: [
+      {
+        title: "Home Page UI",
+        features: [
+          {
+            title: "Thread Feed Layout",
+            description:
+              "Displays a feed of posts in a clean and visually appealing timeline layout.",
+          },
+          {
+            title: "Interactive Elements",
+            description:
+              "Includes mock buttons for liking, commenting, and reposting.",
+          },
+        ],
+      },
+      {
+        title: "Profile Page UI",
+        features: [
+          {
+            title: "User Bio and Metrics",
+            description:
+              "Presents user information like profile picture, bio, follower count, and following count.",
+          },
+          {
+            title: "Thread Display",
+            description:
+              "Displays user-created threads in a grid or list view, similar to the original app.",
+          },
+        ],
+      },
+      {
+        title: "Search Page UI",
+        features: [
+          {
+            title: "Search Bar",
+            description:
+              "Includes a functional search bar for exploring content.",
+          },
+          {
+            title: "Suggested Profiles",
+            description:
+              "Displays mock profiles and trending threads in a modern card design.",
+          },
+        ],
+      },
+    ],
+    challenges:
+      "Recreating the smooth transitions and clean aesthetic of Threads while ensuring responsiveness across iOS devices.",
+    solution:
+      "Leveraged SwiftUI's reusable components and declarative syntax to create a dynamic, scalable UI structure. Focused on typography, alignment, and spacing for an authentic Threads experience.",
+    results:
+      "Delivered a pixel-perfect UI clone of Threads' core pages, demonstrating SwiftUI's strengths in building elegant and responsive designs.",
+    learnings:
+      "Gained expertise in replicating complex UI structures with SwiftUI and honed skills in creating reusable components for large-scale designs.",
+    futureImprovements:
+      "Planning to add interactive features, live data integration, and enhanced animations to further align the clone with the functionality of the original Threads app.",
+  },
+  {
+    id: 8,
+    name: "Stay Easy",
+    image: Booking.src,
+    technology:
+      "React Native, Firebase (Authentication, Firestore), JavaScript",
+    role: "Full-stack Mobile Developer",
+    description:
+      "Created StayEasy, an intuitive hotel booking application using React Native and Firebase. This mobile app streamlines the hotel reservation process, offering users authentication features, the ability to bookmark favorite places, and a convenient booking system for planning their stays.",
+    type: "mobileApp",
+    keyFeatures: [
+      {
+        id: 1,
+        feature: "User Authentication",
+      },
+      {
+        id: 2,
+        feature: "Hotel Booking System",
+      },
+      {
+        id: 3,
+        feature: "Bookmarking System",
+      },
+      {
+        id: 4,
+        feature: "User Profile",
+      },
+    ],
+    github: "https://github.com/Vinaypartap-Singh/BookingApp-RN",
+    detailedFeatures: [
+      {
+        title: "User Authentication",
+        features: [
+          {
+            title: "Secure Sign-Up/Login",
+            description:
+              "Users can create accounts securely and log in with personalized credentials.",
+          },
+          {
+            title: "Social Sign-In",
+            description:
+              "Implemented options for users to sign in using their Google or Facebook accounts.",
+          },
+        ],
+      },
+      {
+        title: "Hotel Booking System",
+        features: [
+          {
+            title: "Browser and Discover",
+            description:
+              "Users can explore a variety of hotels, filter by preferences, and view detailed information about each place",
+          },
+          {
+            title: "Booking System",
+            description:
+              "A seamless booking system allows users to reserve hotel rooms for their desired dates.",
+          },
+        ],
+      },
+      {
+        title: "Bookmarking System",
+        features: [
+          {
+            title: "Favourite Place",
+            description:
+              "Users can bookmark hotels they like for easy access later.",
+          },
+          {
+            title: "Bookmark Management",
+            description:
+              "A dedicated section for managing bookmarked places, making it convenient for future bookings.",
+          },
+        ],
+      },
+      {
+        title: "User Profiles",
+        features: [
+          {
+            title: "Personalized Profiles",
+            description:
+              "Each user has a unique profile with booking history and bookmarked places.",
+          },
+          {
+            title: "Edit Profiles",
+            description:
+              "Users can customize their profiles, update preferences, and manage account details.",
+          },
+        ],
+      },
+    ],
+    challenges:
+      "Implementing a secure booking system, integrating Firebase for real-time updates, and creating an efficient bookmarking system for user convenience.",
+    solution:
+      "Leveraged React Native for a cross-platform mobile application, integrated Firebase for authentication and Firestore for seamless data storage. Focused on creating an intuitive user interface for an optimal booking experience.",
+    results:
+      "StayEasy offers users a hassle-free hotel booking experience with secure authentication, a user-friendly interface, and convenient bookmarking features. Positive feedback highlights the app's responsiveness and ease of use.",
+    learnings:
+      "Enhanced proficiency in mobile app development using React Native, integrated real-time updates with Firebase, and improved skills in creating efficient booking and bookmarking systems.",
+    futureImprovements:
+      "Considering future enhancements, such as additional search filters, personalized recommendations, and integration with payment gateways for seamless transactions.",
+  },
+  {
+    id: 7,
+    name: "Thread Clone",
+    image: ThreadsImage.src,
+    technology:
+      "React Native, Firebase (Authentication, Firestore, Storage), JavaScript",
+    role: "Full-stack Mobile Developer",
+    description:
+      "Developed Threads Clone, a robust social media application using React Native and Firebase. This mobile app empowers users to create accounts, connect by following each other, upload posts, and manage personalized profile pages. Threads Clone provides a seamless and engaging platform for social interactions on the go.",
+    type: "mobileApp",
+    keyFeatures: [
+      {
+        id: 1,
+        feature: "USer Authentication",
+      },
+      {
+        id: 2,
+        feature: "Social Connections",
+      },
+      {
+        id: 3,
+        feature: "Post Management",
+      },
+      {
+        id: 4,
+        feature: "Profile Pages",
+      },
+    ],
+    github: "https://github.com/Vinaypartap-Singh/ThreadsClone-RN",
+    detailedFeatures: [
+      {
+        title: "User Authentication",
+        features: [
+          {
+            title: "Secure Account Creation",
+            description:
+              "Users can securely create accounts with Firebase Authentication.",
+          },
+          {
+            title: "Profile Verification",
+            description:
+              "Implemented authentication measures for secure user identity.",
+          },
+        ],
+      },
+      {
+        title: "Social Connections",
+        features: [
+          {
+            title: "Follow/Unfollow",
+            description:
+              "Users can build connections by following and unfollowing other users.",
+          },
+          {
+            title: "Activity Feed",
+            description:
+              "A real-time activity feed displaying posts from followed users.",
+          },
+        ],
+      },
+      {
+        title: "Post management",
+        features: [
+          {
+            title: "Media Upload",
+            description:
+              "Seamless image and post upload functionality for sharing moments.",
+          },
+          {
+            title: "Interactive Management",
+            description:
+              "Users can like and comment on posts, fostering engagement.",
+          },
+        ],
+      },
+      {
+        title: "Profile Pages",
+        features: [
+          {
+            title: "Personalized Profiles",
+            description:
+              "Unique profile pages for users, showcasing their posts, followers, and following lists.",
+          },
+          {
+            title: "Edit Profile",
+            description:
+              "Users have control over profile details and privacy settings.",
+          },
+        ],
+      },
+    ],
+    challenges:
+      "Ensuring real-time interactions, implementing secure image uploads, and creating an intuitive mobile user interface for a dynamic social experience.",
+    solution:
+      "Leveraged React Native for cross-platform mobile development and Firebase services for seamless data storage, authentication, and real-time updates. Focused on creating an intuitive UI for an engaging mobile experience.",
+    results:
+      "Threads Clone delivers an engaging social media experience on mobile devices, allowing users to connect, share, and interact on the go. Positive user feedback highlights the app's responsiveness and user-friendly design.",
+    learnings:
+      "Enhanced proficiency in mobile app development with React Native, Firebase integration for real-time updates, and secure user authentication. Gained insights into optimizing user interfaces for mobile interactions.",
+    futureImprovements:
+      "Considering future enhancements, such as direct messaging features, video uploads, and additional customization options to further elevate the Threads Clone user experience.",
   },
   {
     id: 14,
@@ -841,210 +1379,7 @@ export const projectData: projectDataProps[] = [
     futureImprovements:
       "Considering future enhancements, such as additional media management features, collaborative sharing options, and further security optimizations.",
   },
-  {
-    id: 7,
-    name: "Thread Clone",
-    image: ThreadsImage.src,
-    technology:
-      "React Native, Firebase (Authentication, Firestore, Storage), JavaScript",
-    role: "Full-stack Mobile Developer",
-    description:
-      "Developed Threads Clone, a robust social media application using React Native and Firebase. This mobile app empowers users to create accounts, connect by following each other, upload posts, and manage personalized profile pages. Threads Clone provides a seamless and engaging platform for social interactions on the go.",
-    type: "mobileApp",
-    keyFeatures: [
-      {
-        id: 1,
-        feature: "USer Authentication",
-      },
-      {
-        id: 2,
-        feature: "Social Connections",
-      },
-      {
-        id: 3,
-        feature: "Post Management",
-      },
-      {
-        id: 4,
-        feature: "Profile Pages",
-      },
-    ],
-    github: "https://github.com/Vinaypartap-Singh/ThreadsClone-RN",
-    detailedFeatures: [
-      {
-        title: "User Authentication",
-        features: [
-          {
-            title: "Secure Account Creation",
-            description:
-              "Users can securely create accounts with Firebase Authentication.",
-          },
-          {
-            title: "Profile Verification",
-            description:
-              "Implemented authentication measures for secure user identity.",
-          },
-        ],
-      },
-      {
-        title: "Social Connections",
-        features: [
-          {
-            title: "Follow/Unfollow",
-            description:
-              "Users can build connections by following and unfollowing other users.",
-          },
-          {
-            title: "Activity Feed",
-            description:
-              "A real-time activity feed displaying posts from followed users.",
-          },
-        ],
-      },
-      {
-        title: "Post management",
-        features: [
-          {
-            title: "Media Upload",
-            description:
-              "Seamless image and post upload functionality for sharing moments.",
-          },
-          {
-            title: "Interactive Management",
-            description:
-              "Users can like and comment on posts, fostering engagement.",
-          },
-        ],
-      },
-      {
-        title: "Profile Pages",
-        features: [
-          {
-            title: "Personalized Profiles",
-            description:
-              "Unique profile pages for users, showcasing their posts, followers, and following lists.",
-          },
-          {
-            title: "Edit Profile",
-            description:
-              "Users have control over profile details and privacy settings.",
-          },
-        ],
-      },
-    ],
-    challenges:
-      "Ensuring real-time interactions, implementing secure image uploads, and creating an intuitive mobile user interface for a dynamic social experience.",
-    solution:
-      "Leveraged React Native for cross-platform mobile development and Firebase services for seamless data storage, authentication, and real-time updates. Focused on creating an intuitive UI for an engaging mobile experience.",
-    results:
-      "Threads Clone delivers an engaging social media experience on mobile devices, allowing users to connect, share, and interact on the go. Positive user feedback highlights the app's responsiveness and user-friendly design.",
-    learnings:
-      "Enhanced proficiency in mobile app development with React Native, Firebase integration for real-time updates, and secure user authentication. Gained insights into optimizing user interfaces for mobile interactions.",
-    futureImprovements:
-      "Considering future enhancements, such as direct messaging features, video uploads, and additional customization options to further elevate the Threads Clone user experience.",
-  },
-  {
-    id: 8,
-    name: "Stay Easy",
-    image: Booking.src,
-    technology:
-      "React Native, Firebase (Authentication, Firestore), JavaScript",
-    role: "Full-stack Mobile Developer",
-    description:
-      "Created StayEasy, an intuitive hotel booking application using React Native and Firebase. This mobile app streamlines the hotel reservation process, offering users authentication features, the ability to bookmark favorite places, and a convenient booking system for planning their stays.",
-    type: "mobileApp",
-    keyFeatures: [
-      {
-        id: 1,
-        feature: "User Authentication",
-      },
-      {
-        id: 2,
-        feature: "Hotel Booking System",
-      },
-      {
-        id: 3,
-        feature: "Bookmarking System",
-      },
-      {
-        id: 4,
-        feature: "User Profile",
-      },
-    ],
-    github: "https://github.com/Vinaypartap-Singh/BookingApp-RN",
-    detailedFeatures: [
-      {
-        title: "User Authentication",
-        features: [
-          {
-            title: "Secure Sign-Up/Login",
-            description:
-              "Users can create accounts securely and log in with personalized credentials.",
-          },
-          {
-            title: "Social Sign-In",
-            description:
-              "Implemented options for users to sign in using their Google or Facebook accounts.",
-          },
-        ],
-      },
-      {
-        title: "Hotel Booking System",
-        features: [
-          {
-            title: "Browser and Discover",
-            description:
-              "Users can explore a variety of hotels, filter by preferences, and view detailed information about each place",
-          },
-          {
-            title: "Booking System",
-            description:
-              "A seamless booking system allows users to reserve hotel rooms for their desired dates.",
-          },
-        ],
-      },
-      {
-        title: "Bookmarking System",
-        features: [
-          {
-            title: "Favourite Place",
-            description:
-              "Users can bookmark hotels they like for easy access later.",
-          },
-          {
-            title: "Bookmark Management",
-            description:
-              "A dedicated section for managing bookmarked places, making it convenient for future bookings.",
-          },
-        ],
-      },
-      {
-        title: "User Profiles",
-        features: [
-          {
-            title: "Personalized Profiles",
-            description:
-              "Each user has a unique profile with booking history and bookmarked places.",
-          },
-          {
-            title: "Edit Profiles",
-            description:
-              "Users can customize their profiles, update preferences, and manage account details.",
-          },
-        ],
-      },
-    ],
-    challenges:
-      "Implementing a secure booking system, integrating Firebase for real-time updates, and creating an efficient bookmarking system for user convenience.",
-    solution:
-      "Leveraged React Native for a cross-platform mobile application, integrated Firebase for authentication and Firestore for seamless data storage. Focused on creating an intuitive user interface for an optimal booking experience.",
-    results:
-      "StayEasy offers users a hassle-free hotel booking experience with secure authentication, a user-friendly interface, and convenient bookmarking features. Positive feedback highlights the app's responsiveness and ease of use.",
-    learnings:
-      "Enhanced proficiency in mobile app development using React Native, integrated real-time updates with Firebase, and improved skills in creating efficient booking and bookmarking systems.",
-    futureImprovements:
-      "Considering future enhancements, such as additional search filters, personalized recommendations, and integration with payment gateways for seamless transactions.",
-  },
+
   {
     id: 9,
     name: "Bubble Game",

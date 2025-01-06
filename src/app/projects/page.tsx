@@ -12,6 +12,7 @@ import AllProjects from "./_components/AllProjects";
 import WebsiteProjects from "./_components/WebsiteProjects";
 import MobileApps from "./_components/MobileAppsProjects";
 import BackendProjects from "./_components/BackendProjects";
+import IOSProjectSection from "./_components/IOSProjects";
 
 export const metadata: Metadata = {
   title:
@@ -38,11 +39,12 @@ export default function Projects() {
 
         <div className="w-full my-10">
           <Tabs defaultValue="All Projects" className="w-full">
-            <TabsList className="grid w-full grid-cols-4 bg-gray-100 dark:bg-gray-900">
+            <TabsList className="grid w-full grid-cols-5 bg-gray-100 dark:bg-gray-900">
               <TabsTrigger value="All Projects">All Projects</TabsTrigger>
               <TabsTrigger value="website">Websites</TabsTrigger>
               <TabsTrigger value="mobile">Mobile Apps</TabsTrigger>
               <TabsTrigger value="backend">Backend</TabsTrigger>
+              <TabsTrigger value="swiftUI">Swift UI</TabsTrigger>
             </TabsList>
             <TabsContent value="All Projects">
               <AllProjects />
@@ -55,6 +57,9 @@ export default function Projects() {
             </TabsContent>
             <TabsContent value="backend">
               <BackendProjects />
+            </TabsContent>
+            <TabsContent value="swiftUI">
+              <IOSProjectSection />
             </TabsContent>
           </Tabs>
         </div>
