@@ -12,7 +12,7 @@ import SyncShareImage from "@/assets/mockups/SyncShare.png";
 import SpotifyCloneImage from "@/assets/mockups/SpotifyClone.png";
 import VMCHAT from "@/assets/mockups/VmChatApplication.png";
 import MIHUIMAGE from "@/assets/mockups/Shopping.png";
-import THOUGHTWAVEIMAGE from "@/assets/mockups/Thoughtwave.png";
+import THOUGHTWAVEIMAGE from "@/assets/mockups/ThoughtWave.png";
 import GOOGLEDOCSIMAGE from "@/assets/mockups/GoogleDocs.png";
 import SWIFTUISPOTIFYCLONEIMAGE from "@/assets/mockups/SpotifyUISwift.png";
 import THREADSUISWIFTUICLONE from "@/assets/mockups/ThreadsUIIOS.png";
