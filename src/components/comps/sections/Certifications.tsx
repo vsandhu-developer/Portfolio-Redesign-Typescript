@@ -1,11 +1,10 @@
-import { SquareArrowOutUpRight } from "lucide-react";
+import { ovo } from "@/app/layout";
 import Link from "next/link";
 import { FaReact, FaShopify, FaWordpress } from "react-icons/fa";
-import { FaShop, FaSquareArrowUpRight } from "react-icons/fa6";
-import { IoLogoNodejs } from "react-icons/io5";
-import { SiWoocommerce } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
+import { FaShop } from "react-icons/fa6";
 import { GoLinkExternal } from "react-icons/go";
+import { IoLogoNodejs } from "react-icons/io5";
+import { TbBrandNextjs } from "react-icons/tb";
 
 interface Certification {
   title: string;
@@ -67,9 +66,9 @@ export default function Certifications() {
   return (
     <div id="skills" className="mb-32">
       <div className="max-w-4xl m-auto mt-32 px-10 lg:px-0">
-        <h1 className="text-2xl">
-          Certifications{" "}
-          <span className="text-sm font-normal">Click to view</span>
+        <h1 className={`text-2xl ${ovo.className}`}>
+          Certifications
+          <span className="text-sm font-normal ml-2">Click to view</span>
         </h1>
         <div className="flex flex-wrap justify-start gap-x-14 pt-12 gap-y-6">
           {certifications.map(({ title, driveURL, icon }, index) => {

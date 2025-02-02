@@ -1,23 +1,26 @@
 import React from "react";
+import { BiLogoTypescript } from "react-icons/bi";
+import { CiDatabase } from "react-icons/ci";
 import {
-  FaHtml5,
-  FaCss3Alt,
-  FaWordpress,
-  FaShopify,
-  FaFigma,
   FaBezierCurve,
+  FaCss3Alt,
+  FaFigma,
+  FaHtml5,
   FaPenNib,
+  FaPython,
+  FaShopify,
+  FaSwift,
+  FaWordpress,
 } from "react-icons/fa";
+import { FaReact } from "react-icons/fa6";
 import {
   IoLogoFirebase,
   IoLogoJavascript,
   IoLogoNodejs,
 } from "react-icons/io5";
-import { FaFileExcel, FaReact } from "react-icons/fa6";
-import { CiDatabase } from "react-icons/ci";
-import { BiLogoTypescript } from "react-icons/bi";
-import { FaSwift, FaPython } from "react-icons/fa";
 
+import { ovo } from "@/app/layout";
+import { GiWireframeGlobe } from "react-icons/gi";
 import {
   SiAppwrite,
   SiKotlin,
@@ -27,7 +30,6 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
-import { GiWireframeGlobe } from "react-icons/gi";
 
 interface skillsType {
   skill: string;
@@ -177,7 +179,7 @@ export default function Skills() {
   return (
     <div id="skills" className="mb-32">
       <div className="max-w-4xl m-auto mt-32 px-10 lg:px-0">
-        <h1 className="text-2xl">What I Know</h1>
+        <h1 className={`text-2xl ${ovo.className}`}>What I Know</h1>
         <div className="flex flex-wrap justify-start gap-x-14 pt-12 gap-y-6">
           {skills.map(({ skill, icon, color }, index) => {
             const borderColor = `border-[${color}]`;

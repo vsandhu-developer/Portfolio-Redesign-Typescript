@@ -1,18 +1,11 @@
-import React from "react";
-import Link from "next/link";
-import { FaGithub } from "react-icons/fa";
-import { CiGlobe } from "react-icons/ci";
-import { PiArrowSquareOutFill } from "react-icons/pi";
-import { projectData } from "@/data/ProjectData";
-import { Button } from "@/components/ui/button";
-import type { Metadata } from "next";
-import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import type { Metadata } from "next";
+import { ovo } from "../layout";
 import AllProjects from "./_components/AllProjects";
-import WebsiteProjects from "./_components/WebsiteProjects";
-import MobileApps from "./_components/MobileAppsProjects";
 import BackendProjects from "./_components/BackendProjects";
 import IOSProjectSection from "./_components/IOSProjects";
+import MobileApps from "./_components/MobileAppsProjects";
+import WebsiteProjects from "./_components/WebsiteProjects";
 
 export const metadata: Metadata = {
   title:
@@ -28,7 +21,7 @@ export default function Projects() {
     <div>
       <div className="min-h-screen pt-10 max-w-4xl m-auto">
         <div className="px-10 lg:px-0">
-          <h1 className="text-4xl">Projects</h1>
+          <h1 className={`text-4xl ${ovo.className}`}>Projects</h1>
           <p className="mt-5 leading-8">
             I have worked on various projects and had the opportunity to explore
             new technologies, while trying to solve new problems. This

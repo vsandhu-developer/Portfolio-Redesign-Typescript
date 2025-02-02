@@ -1,9 +1,10 @@
-import React from "react";
+import { ovo } from "@/app/layout";
 import { Button } from "@/components/ui/button";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
-import MainImage from "../../../assets/Main_Image.png";
 import Link from "next/link";
+import React from "react";
+import MainImage from "../../../assets/Main_Image.png";
 
 interface socialMedia {
   title: string;
@@ -41,7 +42,9 @@ export default function HeroSection() {
         </div>
 
         {/* Intro Content */}
-        <p className="text-2xl sm:text-4xl text-center mt-10 !leading-[1.5]">
+        <p
+          className={`text-2xl sm:text-4xl text-center mt-10 !leading-[1.5] ${ovo.className}`}
+        >
           <span className="font-bold">Hello, I&apos;m Vinay.</span> I&apos;m a{" "}
           <span className="font-bold">Front-End Developer</span> with 2+ years
           of experience. I enjoy building websites and mobile apps. My focus is{" "}

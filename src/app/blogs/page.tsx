@@ -1,11 +1,12 @@
 import BlogsSection from "@/components/comps/sections/Blogs";
+import { ovo } from "../layout";
 
 export default function Blog() {
   return (
     <div>
       <div className="min-h-screen pt-10 max-w-4xl m-auto">
         <div className="px-10 lg:px-0">
-          <h1 className="text-4xl">
+          <h1 className={`text-4xl ${ovo.className}`}>
             Blogs -- <span className="text-sm">Discover, Engage, Learn</span>
           </h1>
           <p className="mt-5 leading-8">

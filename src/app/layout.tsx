@@ -1,14 +1,19 @@
-import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/comps/Header";
-import NextTopLoader from "nextjs-toploader";
 import Footer from "@/components/comps/Footer";
+import Header from "@/components/comps/Header";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import type { Metadata } from "next";
+import { Nunito, Ovo } from "next/font/google";
+import NextTopLoader from "nextjs-toploader";
+import "./globals.css";
 
-const inter = Nunito({
+const nunito = Nunito({
   subsets: ["latin"],
   weight: ["400", "700"],
+});
+
+export const ovo = Ovo({
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -36,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${nunito.className}`}>
         {/* <div className="hidden sm:block bg-[#fbe2e3] dark:bg-gray-800 z-[-1] absolute top-[-6rem] right-[11rem] h-[35.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem]"></div>
         <div className="hidden lg:block bg-[#fbe2e3] dark:bg-gray-900 z-[-1] absolute top-[-6rem] left-[11rem] h-[35.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem]"></div> */}
         <NextTopLoader

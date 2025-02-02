@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ovo } from "../layout";
 
 export const metadata: Metadata = {
   title: "Vinaypartap Singh | Web Developer Resume",
@@ -189,7 +190,9 @@ export default function page() {
     <div>
       <div className="max-w-5xl m-auto lg:px-0 px-10">
         <div className="py-24 space-y-6">
-          <h1 className="text-red-500 text-4xl font-semibold uppercase">
+          <h1
+            className={`text-red-500 text-4xl font-semibold uppercase ${ovo.className}`}
+          >
             Resume
           </h1>
           <h2 className="text-4xl tracking-wider">
