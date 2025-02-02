@@ -1,12 +1,17 @@
-import { ovo } from "@/app/layout";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { projectData } from "@/data/ProjectData";
+import { Ovo } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { CiGlobe } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import { PiArrowSquareOutFill } from "react-icons/pi";
+
+const ovo = Ovo({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function ProjectsHome() {
   return (

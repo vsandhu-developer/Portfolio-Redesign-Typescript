@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { ovo } from "../layout";
+import { Ovo } from "next/font/google";
+
+const ovo = Ovo({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "Vinaypartap Singh | Web Developer Resume",

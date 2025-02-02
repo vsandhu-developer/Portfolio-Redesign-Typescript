@@ -1,6 +1,6 @@
-import { ovo } from "@/app/layout";
 import { Button } from "@/components/ui/button";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { Ovo } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -11,6 +11,11 @@ interface socialMedia {
   icon: React.ReactNode;
   url: string;
 }
+
+const ovo = Ovo({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function HeroSection() {
   const socialMediaItems: socialMedia[] = [

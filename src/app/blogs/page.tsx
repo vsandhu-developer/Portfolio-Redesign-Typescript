@@ -1,5 +1,10 @@
 import BlogsSection from "@/components/comps/sections/Blogs";
-import { ovo } from "../layout";
+import { Ovo } from "next/font/google";
+
+const ovo = Ovo({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function Blog() {
   return (

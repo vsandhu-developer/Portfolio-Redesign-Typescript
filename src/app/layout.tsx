@@ -2,18 +2,13 @@ import Footer from "@/components/comps/Footer";
 import Header from "@/components/comps/Header";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import type { Metadata } from "next";
-import { Nunito, Ovo } from "next/font/google";
+import { Nunito } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
 import "./globals.css";
 
 const nunito = Nunito({
   subsets: ["latin"],
   weight: ["400", "700"],
-});
-
-export const ovo = Ovo({
-  subsets: ["latin"],
-  weight: ["400"],
 });
 
 export const metadata: Metadata = {

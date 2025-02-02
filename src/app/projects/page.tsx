@@ -1,11 +1,16 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import type { Metadata } from "next";
-import { ovo } from "../layout";
+import { Ovo } from "next/font/google";
 import AllProjects from "./_components/AllProjects";
 import BackendProjects from "./_components/BackendProjects";
 import IOSProjectSection from "./_components/IOSProjects";
 import MobileApps from "./_components/MobileAppsProjects";
 import WebsiteProjects from "./_components/WebsiteProjects";
+
+const ovo = Ovo({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title:

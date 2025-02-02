@@ -1,4 +1,4 @@
-import { ovo } from "@/app/layout";
+import { Ovo } from "next/font/google";
 import Link from "next/link";
 import { FaReact, FaShopify, FaWordpress } from "react-icons/fa";
 import { FaShop } from "react-icons/fa6";
@@ -11,6 +11,11 @@ interface Certification {
   driveURL: string;
   icon: React.ReactNode;
 }
+
+const ovo = Ovo({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function Certifications() {
   const certifications: Certification[] = [

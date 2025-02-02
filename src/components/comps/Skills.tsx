@@ -19,7 +19,7 @@ import {
   IoLogoNodejs,
 } from "react-icons/io5";
 
-import { ovo } from "@/app/layout";
+import { Ovo } from "next/font/google";
 import { GiWireframeGlobe } from "react-icons/gi";
 import {
   SiAppwrite,
@@ -36,6 +36,11 @@ interface skillsType {
   icon: React.ReactNode;
   color: string;
 }
+
+const ovo = Ovo({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function Skills() {
   const skills: skillsType[] = [
