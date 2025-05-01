@@ -1,10 +1,4 @@
 import type { Metadata } from "next";
-import { Ovo } from "next/font/google";
-
-const ovo = Ovo({
-  subsets: ["latin"],
-  weight: "400",
-});
 
 export const metadata: Metadata = {
   title: "Vinaypartap Singh | Web Developer Resume",
@@ -196,7 +190,7 @@ export default function page() {
       <div className="max-w-5xl m-auto lg:px-0 px-10">
         <div className="py-24 space-y-6">
           <h1
-            className={`text-red-500 text-4xl font-semibold uppercase ${ovo.className}`}
+            className={`text-red-500 text-4xl font-semibold uppercase`}
           >
             Resume
           </h1>

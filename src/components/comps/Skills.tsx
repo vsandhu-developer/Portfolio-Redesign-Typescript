@@ -19,7 +19,6 @@ import {
   IoLogoNodejs,
 } from "react-icons/io5";
 
-import { Ovo } from "next/font/google";
 import { GiWireframeGlobe } from "react-icons/gi";
 import {
   SiAppwrite,
@@ -36,11 +35,6 @@ interface skillsType {
   icon: React.ReactNode;
   color: string;
 }
-
-const ovo = Ovo({
-  subsets: ["latin"],
-  weight: "400",
-});
 
 export default function Skills() {
   const skills: skillsType[] = [
@@ -184,7 +178,7 @@ export default function Skills() {
   return (
     <div id="skills" className="mb-32">
       <div className="max-w-4xl m-auto mt-32 px-10 lg:px-0">
-        <h1 className={`text-2xl ${ovo.className}`}>What I Know</h1>
+        <h1 className={`text-2xl`}>What I Know</h1>
         <div className="flex flex-wrap justify-start gap-x-14 pt-12 gap-y-6">
           {skills.map(({ skill, icon, color }, index) => {
             const borderColor = `border-[${color}]`;

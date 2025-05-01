@@ -1,17 +1,11 @@
 import BlogsSection from "@/components/comps/sections/Blogs";
-import { Ovo } from "next/font/google";
-
-const ovo = Ovo({
-  subsets: ["latin"],
-  weight: "400",
-});
 
 export default function Blog() {
   return (
     <div>
       <div className="min-h-screen pt-10 max-w-4xl m-auto">
         <div className="px-10 lg:px-0">
-          <h1 className={`text-4xl ${ovo.className}`}>
+          <h1 className={`text-4xl`}>
             Blogs -- <span className="text-sm">Discover, Engage, Learn</span>
           </h1>
           <p className="mt-5 leading-8">

@@ -1,24 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { projectData } from "@/data/ProjectData";
-import { Ovo } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { CiGlobe } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import { PiArrowSquareOutFill } from "react-icons/pi";
 
-const ovo = Ovo({
-  subsets: ["latin"],
-  weight: "400",
-});
 
 export default function ProjectsHome() {
   return (
     <div>
       <div className="min-h-screen pt-10 mt-32 max-w-4xl m-auto">
         <div className="px-10 lg:px-0">
-          <h1 className={`text-2xl ${ovo.className}`}>Picked Porjects</h1>
+          <h1 className={`text-2xl`}>Picked Projects</h1>
           {/* <p className="mt-5 leading-8">
             I have worked on various projects and had the opportunity to explore
             new technologies, while trying to solve new problems. This

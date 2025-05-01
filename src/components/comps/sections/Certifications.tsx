@@ -1,4 +1,3 @@
-import { Ovo } from "next/font/google";
 import Link from "next/link";
 import { FaReact, FaShopify, FaWordpress } from "react-icons/fa";
 import { FaShop } from "react-icons/fa6";
@@ -11,11 +10,6 @@ interface Certification {
   driveURL: string;
   icon: React.ReactNode;
 }
-
-const ovo = Ovo({
-  subsets: ["latin"],
-  weight: "400",
-});
 
 export default function Certifications() {
   const certifications: Certification[] = [
@@ -71,7 +65,7 @@ export default function Certifications() {
   return (
     <div id="skills" className="mb-32">
       <div className="max-w-4xl m-auto mt-32 px-10 lg:px-0">
-        <h1 className={`text-2xl ${ovo.className}`}>
+        <h1 className={`text-2xl`}>
           Certifications
           <span className="text-sm font-normal ml-2">Click to view</span>
         </h1>
