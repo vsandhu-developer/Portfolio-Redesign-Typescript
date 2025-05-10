@@ -1,21 +1,21 @@
-import Daily1BlogImage from "@/assets/mockups/Daily1Blog.png";
-import NetflixImage from "@/assets/mockups/Netflix.png";
-import SpartxImage from "@/assets/mockups/SpartxDev.png";
-import LaundryImage from "@/assets/mockups/Laundry.png";
-import CloudVaultImage from "@/assets/mockups/MediaCloud.png";
-import ThreadsImage from "@/assets/mockups/ThreadsClone.png";
 import Booking from "@/assets/mockups/Booking.png";
 import BubbleImage from "@/assets/mockups/BubbleGame.png";
-import ZomatoImage from "@/assets/mockups/Zomato.png";
-import JobFinderAppImage from "@/assets/mockups/JobFinderApp.png";
-import SyncShareImage from "@/assets/mockups/SyncShare.png";
-import SpotifyCloneImage from "@/assets/mockups/SpotifyClone.png";
-import VMCHAT from "@/assets/mockups/VmChatApplication.png";
-import MIHUIMAGE from "@/assets/mockups/Shopping.png";
-import THOUGHTWAVEIMAGE from "@/assets/mockups/ThoughtWave.png";
+import Daily1BlogImage from "@/assets/mockups/Daily1Blog.png";
 import GOOGLEDOCSIMAGE from "@/assets/mockups/GoogleDocs.png";
+import JobFinderAppImage from "@/assets/mockups/JobFinderApp.png";
+import LaundryImage from "@/assets/mockups/Laundry.png";
+import CloudVaultImage from "@/assets/mockups/MediaCloud.png";
+import NetflixImage from "@/assets/mockups/Netflix.png";
+import MIHUIMAGE from "@/assets/mockups/Shopping.png";
+import SpartxImage from "@/assets/mockups/SpartxDev.png";
+import SpotifyCloneImage from "@/assets/mockups/SpotifyClone.png";
 import SWIFTUISPOTIFYCLONEIMAGE from "@/assets/mockups/SpotifyUISwift.png";
+import SyncShareImage from "@/assets/mockups/SyncShare.png";
+import THOUGHTWAVEIMAGE from "@/assets/mockups/ThoughtWave.png";
+import ThreadsImage from "@/assets/mockups/ThreadsClone.png";
 import THREADSUISWIFTUICLONE from "@/assets/mockups/ThreadsUIIOS.png";
+import VMCHAT from "@/assets/mockups/VmChatApplication.png";
+import ZomatoImage from "@/assets/mockups/Zomato.png";
 // Image Check
 
 type projectDataProps = {
@@ -171,7 +171,7 @@ export const projectData: projectDataProps[] = [
       },
     ],
     github: "https://github.com/Vinaypartap-Singh/Thought-Wave",
-    websiteURL: "https://thought-wave-vinay.vercel.app/",
+    websiteURL: "https://www.thoughtwave.live/",
     detailedFeatures: [
       {
         title: "User Authentication and Profiles",
