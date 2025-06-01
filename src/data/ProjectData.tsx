@@ -419,7 +419,7 @@ export const projectData: projectDataProps[] = [
         feature: "Search Page UI",
       },
     ],
-    github: "https://github.com/YourUsername/Threads-UI-Clone",
+    github: "https://github.com/Vinaypartap-Singh/Threads-Clone-IOS-Swift",
     detailedFeatures: [
       {
         title: "Home Page UI",
