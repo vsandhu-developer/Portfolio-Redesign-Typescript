@@ -2,7 +2,7 @@ import { projectData } from "@/data/ProjectData";
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.vinaypartap.netlify.com";
+  const baseUrl = "https://vinaypartap.netlify.app";
 
   // Static routes
   const routes = ["", "/projects", "/resume", "/blogs"].map((route) => ({

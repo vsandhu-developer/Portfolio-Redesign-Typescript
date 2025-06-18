@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/blogs/secret-upload/"], // Disallow admin routes
     },
-    sitemap: "https://www.vinaypartap.netlify.com/sitemap.xml",
+    sitemap: "https://vinaypartap.netlify.app/sitemap.xml",
   };
 }

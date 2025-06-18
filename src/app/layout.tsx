@@ -12,7 +12,7 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.vinaypartap.netlify.com"),
+  metadataBase: new URL("https://vinaypartap.netlify.com"),
   title: "Vinaypartap Singh",
   description:
     "- Web Developer | React.js, Node.js, MongoDB, Firebase, React Native, Shopify Liquid (Theme Development), WordPress, Elementor, Google Sites |",
@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     title: "Vinaypartap Singh - Web Developer Portfolio",
     description:
       "Explore the portfolio of Vinaypartap Singh, a versatile web developer skilled in React.js, Node.js, MongoDB, Firebase, React Native, Shopify, WordPress, and more.",
-    url: "https://www.vinaypartap.netlify.app",
+    url: "https://vinaypartap.netlify.app",
     type: "website",
     locale: "en_US",
     siteName: "Vinaypartap Singh Portfolio",
     images: [
       {
-        url: "/Main_Image.png",
+        url: "https://vinaypartap.netlify.app/Main_Image.png",
         width: 1200,
         height: 630,
         alt: "Vinaypartap Singh Portfolio Preview",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "Vinaypartap Singh - Web Developer Portfolio",
     description:
       "Explore the portfolio of Vinaypartap Singh, a versatile web developer skilled in React.js, Node.js, MongoDB, Firebase, React Native, Shopify, WordPress, and more.",
-    images: ["/Main_Image.png"],
+    images: ["https://vinaypartap.netlify.app/Main_Image.png"],
   },
   robots: {
     index: true,
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     google: "BUtc-1brXh5W4hzlZUFOe-6ncKWgmj1uOFEIuasS6vs",
   },
   alternates: {
-    canonical: "https://www.vinaypartap.netlify.app",
+    canonical: "https://vinaypartap.netlify.app",
   },
 };
 
