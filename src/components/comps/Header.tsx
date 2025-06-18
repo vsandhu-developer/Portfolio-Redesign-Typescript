@@ -1,8 +1,8 @@
+import { BookOpenText, Code, HomeIcon, NotebookPen } from "lucide-react";
 import Link from "next/link";
+import React from "react";
 import { Button } from "../ui/button";
 import BottomNavigation from "./BottomNavigation";
-import React from "react";
-import { BookOpenText, Code, HomeIcon, NotebookPen } from "lucide-react";
 
 interface navItemsType {
   title: string;

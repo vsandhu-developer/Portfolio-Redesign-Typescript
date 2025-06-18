@@ -22,10 +22,42 @@ export const metadata: Metadata = {
     title: "Vinaypartap Singh - Web Developer Portfolio",
     description:
       "Explore the portfolio of Vinaypartap Singh, a versatile web developer skilled in React.js, Node.js, MongoDB, Firebase, React Native, Shopify, WordPress, and more.",
-    url: "https://www.vinaypartap.netlify.com",
+    url: "https://www.vinaypartap.netlify.app",
     type: "website",
     locale: "en_US",
     siteName: "Vinaypartap Singh Portfolio",
+    images: [
+      {
+        url: "/Main_Image.png",
+        width: 1200,
+        height: 630,
+        alt: "Vinaypartap Singh Portfolio Preview",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vinaypartap Singh - Web Developer Portfolio",
+    description:
+      "Explore the portfolio of Vinaypartap Singh, a versatile web developer skilled in React.js, Node.js, MongoDB, Firebase, React Native, Shopify, WordPress, and more.",
+    images: ["/Main_Image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: "BUtc-1brXh5W4hzlZUFOe-6ncKWgmj1uOFEIuasS6vs",
+  },
+  alternates: {
+    canonical: "https://www.vinaypartap.netlify.app",
   },
 };
 

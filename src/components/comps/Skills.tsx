@@ -177,8 +177,7 @@ export default function Skills() {
   ];
   return (
     <div id="skills" className="mb-32">
-      <div className="max-w-4xl m-auto mt-32 px-10 lg:px-0">
-        <h1 className={`text-2xl`}>What I Know</h1>
+      <div className="max-w-4xl m-auto pt-10 px-10 lg:px-0">
         <div className="flex flex-wrap justify-start gap-x-14 pt-12 gap-y-6">
           {skills.map(({ skill, icon, color }, index) => {
             const borderColor = `border-[${color}]`;
