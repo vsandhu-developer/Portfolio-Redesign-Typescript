@@ -170,7 +170,7 @@ export const projectData: projectDataProps[] = [
         feature: "Follow/Unfollow and Search Functionality",
       },
     ],
-    github: "https://github.com/Vinaypartap-Singh/Thought-Wave",
+    github: "https://github.com/vsandhu-developer/Thought-Wave",
     websiteURL: "https://www.thoughtwave.live/",
     detailedFeatures: [
       {
@@ -255,7 +255,7 @@ export const projectData: projectDataProps[] = [
         feature: "Document Management",
       },
     ],
-    github: "https://github.com/Vinaypartap-Singh/docs-nextjs-api-prisma",
+    github: "https://github.com/vsandhu-developer/docs-nextjs-api-prisma",
     websiteURL: "https://docs-nextjs-vinay.vercel.app/document",
     detailedFeatures: [
       {
@@ -337,7 +337,7 @@ export const projectData: projectDataProps[] = [
         feature: "Library Page UI",
       },
     ],
-    github: "https://github.com/Vinaypartap-Singh/Spotify-Ui-SwiftUI-Clone",
+    github: "https://github.com/vsandhu-developer/Spotify-Ui-SwiftUI-Clone",
     detailedFeatures: [
       {
         title: "Home Page UI",
@@ -419,7 +419,7 @@ export const projectData: projectDataProps[] = [
         feature: "Search Page UI",
       },
     ],
-    github: "https://github.com/Vinaypartap-Singh/Threads-Clone-IOS-Swift",
+    github: "https://github.com/vsandhu-developer/Threads-Clone-IOS-Swift",
     detailedFeatures: [
       {
         title: "Home Page UI",
@@ -506,7 +506,7 @@ export const projectData: projectDataProps[] = [
         feature: "User Profile",
       },
     ],
-    github: "https://github.com/Vinaypartap-Singh/BookingApp-RN",
+    github: "https://github.com/vsandhu-developer/BookingApp-RN",
     detailedFeatures: [
       {
         title: "User Authentication",
@@ -608,7 +608,7 @@ export const projectData: projectDataProps[] = [
         feature: "Profile Pages",
       },
     ],
-    github: "https://github.com/Vinaypartap-Singh/ThreadsClone-RN",
+    github: "https://github.com/vsandhu-developer/ThreadsClone-RN",
     detailedFeatures: [
       {
         title: "User Authentication",
@@ -710,7 +710,7 @@ export const projectData: projectDataProps[] = [
         feature: "Firebase Integration",
       },
     ],
-    github: "https://github.com/Vinaypartap-Singh/Chat-App-RN",
+    github: "https://github.com/vsandhu-developer/Chat-App-RN",
     detailedFeatures: [
       {
         title: "Real-time Messaging",
@@ -866,7 +866,7 @@ export const projectData: projectDataProps[] = [
         feature: "Playlist Management",
       },
     ],
-    github: "https://github.com/Vinaypartap-Singh/Spotify-Clone",
+    github: "https://github.com/vsandhu-developer/Spotify-Clone",
     detailedFeatures: [
       {
         title: "Music Streaming",
@@ -948,7 +948,7 @@ export const projectData: projectDataProps[] = [
         feature: "Real-time Communication",
       },
     ],
-    github: "https://github.com/Vinaypartap-Singh/JobFinderApp-React-Native",
+    github: "https://github.com/vsandhu-developer/JobFinderApp-React-Native",
     detailedFeatures: [
       {
         title: "Job Posting and Application",
@@ -1033,7 +1033,7 @@ export const projectData: projectDataProps[] = [
         feature: "Responsive design for optimal viewing on various device",
       },
     ],
-    github: "https://github.com/Vinaypartap-Singh/NetflixApp-RN",
+    github: "https://github.com/vsandhu-developer/NetflixApp-RN",
     detailedFeatures: [
       {
         title: "Dynamic Data",
@@ -1206,7 +1206,7 @@ export const projectData: projectDataProps[] = [
         feature: "Automatic Location Detection",
       },
     ],
-    github: "https://github.com/Vinaypartap-Singh/React-Native-LaundryApp",
+    github: "https://github.com/vsandhu-developer/React-Native-LaundryApp",
     detailedFeatures: [
       {
         title: "User Profiles",
@@ -1305,7 +1305,7 @@ export const projectData: projectDataProps[] = [
       },
     ],
     github:
-      "https://github.com/Vinaypartap-Singh/ImageUploaderApp-React-Native",
+      "https://github.com/vsandhu-developer/ImageUploaderApp-React-Native",
     detailedFeatures: [
       {
         title: "Authentication",
@@ -1401,7 +1401,7 @@ export const projectData: projectDataProps[] = [
       },
     ],
     github:
-      "https://github.com/Vinaypartap-Singh/Javascript-Project-Bubble-Game/tree/main",
+      "https://github.com/vsandhu-developer/Javascript-Project-Bubble-Game/tree/main",
     websiteURL: "https://bubble-game-vinay.netlify.app/",
     detailedFeatures: [
       {
@@ -1560,6 +1560,6 @@ export const projectData: projectDataProps[] = [
       "Working through the OTP verification process improved knowledge of secure authentication flows and error handling.Gained insights into securing user data, especially in the context of link updates and personal branding data, as well as managing expiration for time-sensitive tokens.",
     futureImprovements:
       "Adding a customizable hero section and additional branding sections will allow users to create a more engaging experience. This feature would include options for uploading custom backgrounds, headings, and descriptions for a personalized touch.Including more layout control for sections like About, Testimonials, or Services would empower users to build a profile page more aligned with their brand.",
-    github: "https://github.com/Vinaypartap-Singh/MIHU_BACKEND",
+    github: "https://github.com/vsandhu-developer/MIHU_BACKEND",
   },
 ];
