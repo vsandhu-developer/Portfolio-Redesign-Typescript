@@ -16,7 +16,7 @@ export default function HeroSection() {
     {
       title: "Github",
       icon: <GitHubLogoIcon color="white" width={25} height={25} />,
-      url: "https://github.com/Vinaypartap-Singh/",
+      url: "https://github.com/vsandhu-developer/",
     },
     {
       title: "Linked In",
@@ -41,9 +41,7 @@ export default function HeroSection() {
         </div>
 
         {/* Intro Content */}
-        <p
-          className={`text-2xl sm:text-4xl text-center mt-10 !leading-[1.5]`}
-        >
+        <p className={`text-2xl sm:text-4xl text-center mt-10 !leading-[1.5]`}>
           <span className="font-bold">Hello, I&apos;m Vinay.</span> I&apos;m a{" "}
           <span className="font-bold">Front-End Developer</span> with 2+ years
           of experience. I enjoy building websites and mobile apps. My focus is{" "}
