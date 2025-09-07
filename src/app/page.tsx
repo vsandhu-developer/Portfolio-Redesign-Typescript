@@ -1,15 +1,14 @@
+import Certifications from "@/components/comps/sections/Certifications";
 import HeroSection from "@/components/comps/sections/HeroSection";
 import ProjectsHome from "@/components/comps/sections/ProjectSectionHome";
-import SkillsTabs from "@/components/comps/sections/Skills&Certification";
+import Skills from "@/components/comps/Skills";
 
 export default function Home() {
   return (
     <main className="">
-      {/* <Header /> */}
       <HeroSection />
-      <SkillsTabs />
-      {/* <Certifications />
-      <Skills /> */}
+      <Certifications />
+      <Skills />
       <ProjectsHome />
     </main>
   );

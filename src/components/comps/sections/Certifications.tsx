@@ -63,12 +63,9 @@ export default function Certifications() {
     },
   ];
   return (
-    <div id="skills" className="mb-32">
+    <div id="skills" className="my-10">
       <div className="max-w-4xl m-auto pt-10 px-10 lg:px-0">
-        <h1 className={`text-2xl`}>
-          Certifications
-          <span className="text-sm font-normal ml-2">Click to view</span>
-        </h1>
+        <h1 className={`text-2xl`}>Certifications</h1>
         <div className="flex flex-wrap justify-start gap-x-14 pt-12 gap-y-6">
           {certifications.map(({ title, driveURL, icon }, index) => {
             return (

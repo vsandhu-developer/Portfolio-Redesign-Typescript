@@ -20,6 +20,7 @@ import {
 } from "react-icons/io5";
 
 import { GiWireframeGlobe } from "react-icons/gi";
+import { RiFlutterFill } from "react-icons/ri";
 import {
   SiAppwrite,
   SiKotlin,
@@ -66,6 +67,11 @@ export default function Skills() {
     {
       skill: "React Native",
       icon: <FaReact color="#61dbfb" />,
+      color: "#61dbfb",
+    },
+    {
+      skill: "Flutter",
+      icon: <RiFlutterFill color="#0553B1" />,
       color: "#61dbfb",
     },
     {
@@ -176,11 +182,11 @@ export default function Skills() {
     },
   ];
   return (
-    <div id="skills" className="mb-32">
+    <div id="skills" className="my-10">
       <div className="max-w-4xl m-auto pt-10 px-10 lg:px-0">
+        <h1 className={`text-2xl`}>Skills</h1>
         <div className="flex flex-wrap justify-start gap-x-14 pt-12 gap-y-6">
           {skills.map(({ skill, icon, color }, index) => {
-            const borderColor = `border-[${color}]`;
             return (
               <div
                 key={index}
